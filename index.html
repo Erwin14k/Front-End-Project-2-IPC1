@@ -92,7 +92,7 @@
             <div class="container">
                <div class="text-bg">
                   <h1>Chastain<br><strong class="white">Park Memorial</strong></h1>
-                  <div class="button_section"> <a class="main_bt" href="#">Regístrarse</a>  </div>
+                  <div > <button id="redRegister" class="botonRedireccionarResgistrar">Registrarse</button>  </div>
 				 
                   <div class="container">
                      <form class="main-form">
@@ -102,7 +102,7 @@
                               <div class="row">
                                  <div class="col-xl-40 col-lg-40 col-md-40 col-sm-10 col-120">
                                     <label >Usuario</label>
-                                    <input class="form-control" placeholder="usuario" type="text" name="">
+                                    <input id="username"class="form-control" placeholder="usuario" type="text" name="username">
 									
                                  </div>
                                  
@@ -113,14 +113,18 @@
 							   <div class="row">
 							  <div class="col-xl-40 col-lg-40 col-md-40 col-sm-10 col-120">
                                     <label >Contraseña</label>
-                                    <input class="form-control" placeholder="Contraseña" type="text" name="Any">
+                                    <input id="passwordI" class="form-control" placeholder="Contraseña" type="password" name="passwordI">
                                  </div>
 								 </div>
                            </div>
                            <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12 col-12">
-                              <a href="#">Iniciar Sesión</a>
+                             
                            </div>
                         </div>
+						<div id="btnLoginDiv" class="col-xl-20 col-lg-20 col-md-20 col-sm-20 col-20">
+							  <button id="btnLogin" class="botoIniciarSesion">Iniciar Sesión</button>
+							  
+                           </div>
                      </form>
                   </div>
                </div>
@@ -391,6 +395,7 @@
       <script src="js/custom.js"></script>
       <!-- javascript --> 
       <script src="js/owl.carousel.js"></script>
+	  <script src="js/loginModule.js"></script> 
       <script>
          $(document).ready(function() {
            var owl = $('.owl-carousel');
