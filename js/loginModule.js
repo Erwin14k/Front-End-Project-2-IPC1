@@ -1,5 +1,5 @@
 try{
-    let loginBtn = document.querySelector("#btnLogin");
+    let loginBtn = document.getElementById("#btnLogin");
     loginBtn.addEventListener("click",login);
     
 } catch (error) {
@@ -54,7 +54,7 @@ function login(){
 
 
 try{
-    let newPatientBtn = document.querySelector("#redRegister");
+    let newPatientBtn = document.getElementById("#redRegister");
     newPatientBtn.addEventListener("click",create_patient);
     
 } catch (error) {
@@ -69,9 +69,9 @@ function create_patient(){
     let lastName = document.getElementById("#lastnameInputR").value;
     let userName = document.getElementById("#usernameInputR").value;
     let password = document.getElementById("#passwordInputR").value;
-    let birth = document.getElementById("#birthInputR")
+    let birth = document.getElementById("#birthInputR").value;
     let gender = document.getElementById("#genderListR").value;
-    let phone = document.getElementById("#phoneInputR")
+    let phone = document.getElementById("#phoneInputR").value;
         // Haciendo una petición al servidor
         fetch("https://ipc1project2.herokuapp.com/registerr",{
             method:"POST",
