@@ -34,7 +34,7 @@ function login(){
         })
         .then(res => {
             // Verificando estado de respuesta y cambiando vista a login
-            if(res.state == "ok"){
+            if(res.state == "perfect"){
                 window.alert(res.message)
                 window.location = "adminView.html"
                 localStorage.setItem("logged", true);
