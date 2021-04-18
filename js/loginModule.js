@@ -1,5 +1,5 @@
 try{
-    let loginBtn = document.getElementById("#btnLogin");
+    let loginBtn = document.getElementById("btnLogin");
     loginBtn.addEventListener("click",login);
     
 } catch (error) {
@@ -11,8 +11,8 @@ try{
 // Función para inicar sesión
 function login(){
     // Obteniendo valores de los inputs usuario y contraseña
-    let userName = document.getElementById("#usernameInputL").value;
-    let password = document.getElementById("#passwordInputL").value;
+    let userName = document.getElementById("usernameInputL").value;
+    let password = document.getElementById("passwordInputL").value;
     
     // Este if verificará que los input de usuario y contraseña no esten vacios
     if(userName != "" && password != ""){
@@ -54,7 +54,7 @@ function login(){
 
 
 try{
-    let newPatientBtn = document.getElementById("#redRegister");
+    let newPatientBtn = document.getElementById("redRegister");
     newPatientBtn.addEventListener("click",create_patient);
     
 } catch (error) {
@@ -65,13 +65,13 @@ try{
 // Función para crear usuario
 function create_patient(){
     // Obteniendo valores de los inputs
-    let name = document.getElementById("#nameInputR").value;
-    let lastName = document.getElementById("#lastnameInputR").value;
-    let userName = document.getElementById("#usernameInputR").value;
-    let password = document.getElementById("#passwordInputR").value;
-    let birth = document.getElementById("#birthInputR").value;
-    let gender = document.getElementById("#genderListR").value;
-    let phone = document.getElementById("#phoneInputR").value;
+    let name = document.getElementById("nameInputR").value;
+    let lastName = document.getElementById("lastnameInputR").value;
+    let userName = document.getElementById("usernameInputR").value;
+    let password = document.getElementById("passwordInputR").value;
+    let birth = document.getElementById("birthInputR").value;
+    let gender = document.getElementById("genderListR").value;
+    let phone = document.getElementById("phoneInputR").value;
         // Haciendo una petición al servidor
         fetch("https://ipc1project2.herokuapp.com/registerr",{
             method:"POST",
