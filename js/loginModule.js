@@ -17,7 +17,7 @@ function login(){
     // Este if verificará que los input de usuario y contraseña no esten vacios
     if(userName != "" && password != ""){
         // Haciendo una petición al servidor de alojamiento
-        fetch("",{
+        fetch("https://ipc1project2.herokuapp.com/login",{
             //En este caso se utiliza un método POST
             method:"POST",
             headers:{
@@ -36,7 +36,7 @@ function login(){
             // Verificando estado de respuesta y cambiando vista a login
             if(res.state == "ok"){
                 window.alert(res.message)
-                window.location = "/SpartanStore-Client/index.html"
+                window.location = "adminView.html"
                 localStorage.setItem("logged", true);
                 localStorage.setItem("userName", userName);
                 localStorage.setItem("userRole", res.userRole);
