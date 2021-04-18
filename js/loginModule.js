@@ -11,8 +11,8 @@ try{
 // Función para inicar sesión
 function login(){
     // Obteniendo valores de los inputs usuario y contraseña
-    let userName = document.querySelector("#username").value;
-    let password = document.querySelector("#passwordI").value;
+    let userName = document.querySelector("#usernameInput").value;
+    let password = document.querySelector("#passwordInput").value;
     
     // Este if verificará que los input de usuario y contraseña no esten vacios
     if(userName != "" && password != ""){
