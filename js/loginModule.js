@@ -1,8 +1,4 @@
-(function () {
-    if(localStorage.getItem('logged')){
-        window.location = "./adminView.html"
-    }
-})();
+
 
 
 try{
@@ -38,19 +34,56 @@ function login(){
         })
         .then(res => {
             // Verificando estado de respuesta y cambiando vista a login
-            if(res.state == "perfect"){
+            if(res.state == "perfect"&& res.role=="admin"){
                 window.alert(res.message);
-                window.location = "./adminView.html"
                 localStorage.setItem("logged", true);
+                localStorage.setItem("id",res.id);
                 localStorage.setItem("user_name", userName);
-                localStorage.setItem("password", password);
+                localStorage.setItem("role", res.role);
+                window.location = "./adminView.html";
             }
-            else{
-                window.alert(res.message)
+            else if((res.state == "perfect"&& res.role=="nurse")){
+                window.alert(res.message);
+                localStorage.setItem("logged", true);
+                localStorage.setItem("id",res.id);
+                localStorage.setItem("user_name", userName);
+                localStorage.setItem("role", res.role);
+                window.location = "./nurseView.html";
             }
+            else if((res.state == "perfect"&& res.role=="doctor")){
+                window.alert(res.message);
+                localStorage.setItem("logged", true);
+                localStorage.setItem("id",res.id);
+                localStorage.setItem("user_name", userName);
+                localStorage.setItem("role", res.role);
+                window.location = "./doctorView.html";
+            }
+            else if((res.state == "perfect"&& res.role=="patient")){
+                window.alert(res.message);
+                localStorage.setItem("logged", true);
+                localStorage.setItem("id",res.id);
+                localStorage.setItem("user_name", userName);
+                localStorage.setItem("role", res.role);
+                window.location = "./patientView.html";
+            }else {
+            window.alert("Nombre o usuario Incorrectos, intente de nuevo")
+        }
         })
     }
     else{
         window.alert("Debes llenar Todos los campos para poder iniciar Sesión")
     }
+}
+
+try{
+    let registerLinkBtn = document.getElementById("redRegister");
+    registerLinkBtn.addEventListener("click",redirectRegister);
+} catch (error) {
+    
+}
+
+// Función para inicar sesión
+function redirectRegister(){
+    window.location = "./registerPatient.html";
+    
 }

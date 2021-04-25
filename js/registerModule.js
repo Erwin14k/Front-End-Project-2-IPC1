@@ -1,5 +1,5 @@
 try{
-    let newPatientBtn = document.getElementById("redRegister");
+    let newPatientBtn = document.getElementById("register");
     newPatientBtn.addEventListener("click",create_patient);
     
 } catch (error) {
@@ -10,15 +10,17 @@ try{
 // Función para crear usuario
 function create_patient(){
     // Obteniendo valores de los inputs
+
     let name = document.getElementById("nameInputR").value;
     let lastName = document.getElementById("lastnameInputR").value;
-    let userName = document.getElementById("usernameInputR").value;
+    let userName = document.querySelector("#userNameInputR").value;
     let password = document.getElementById("passwordInputR").value;
     let birth = document.getElementById("birthInputR").value;
-    let gender = document.getElementById("genderListR").value;
+    let gender = document.getElementById("genderInputR").value;
     let phone = document.getElementById("phoneInputR").value;
+    if(gender == "m" || gender == "f"){
         // Haciendo una petición al servidor
-        fetch("https://ipc1project2.herokuapp.com/register",{
+        fetch("http://127.0.0.1:5000/register",{
             method:"POST",
             headers:{
                 'Content-Type':'application/json'
@@ -39,12 +41,16 @@ function create_patient(){
         })
         .then(res => {
             // Verificando estado de respuesta y cambiando vista a login
-            if(res.state == "ok"){
+            if(res.state == "perfect"){
                 window.alert("Tu usuario ha sido creado con éxito")
-                window.location = "adminView.html"
+                window.location = "./index.html"
             }
             else{
                 window.alert("El nombre de usuario no está disponible")
             }
         })
+    }
+    else{
+       window.alert("Debes llenar Todos los campos de manera correcta para poder continuar")
+    }
     }

@@ -3,8 +3,8 @@ logoutBtn.addEventListener("click",function(){
     window.location="./index.html";
     localStorage.removeItem("logged");
     localStorage.removeItem("user_name");
-    localStorage.removeItem("password");
-    //localStorage.removeItem("role");
+    localStorage.removeItem("role");
+    localStorage.removeItem("id");
 });
 
 
@@ -141,4 +141,5 @@ function get_id_of_users(){
         });
     })        
 }
+
 

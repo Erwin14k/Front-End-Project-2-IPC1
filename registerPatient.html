@@ -71,7 +71,7 @@
                            <nav class="main-menu">
                               <ul class="menu-area-main">
                                  <li class="active"> <a href="#">Home</a> </li>
-                                 <li> <a href="#btnR">Register</a> </li>
+                                 <li> <a href="#register">Register</a> </li>
                                
                                  <li><a href="#ama">Mastermind</a></li>
                                  <li><a href="#contact">Contact Us</a></li>
@@ -102,7 +102,7 @@
                               <div class="row">
                                  <div class="col-xl-40 col-lg-40 col-md-40 col-sm-10 col-120">
                                     <label >Nombre</label>
-                                    <input id="nameInputR"class="form-control" placeholder="Ingresa tu nombre" type="text" name="nameR" required>
+                                    <input id="nameInputR"class="form-control" placeholder="Ingresa tu nombre" type="text"  required>
 									
                                  </div>
                               </div>
@@ -111,49 +111,47 @@
 								<div class="row">
 								<div class="col-xl-40 col-lg-40 col-md-40 col-sm-10 col-120">
                                     <label >Apellido</label>
-                                    <input id="lastnameInputR"class="form-control" placeholder="Ingresa tu apellido" type="text" name="lastNameR" required>
+                                    <input id="lastnameInputR"class="form-control" placeholder="Ingresa tu apellido" type="text"  required>
                                  </div>
 								 </div>
 								 
 								<div class="row">
 								<div class="col-xl-40 col-lg-40 col-md-40 col-sm-10 col-120">
                                     <label >Nombre de usuario</label>
-                                    <input id="userNameInputR"class="form-control" placeholder="Ingresa un nombre de usuario" type="text" name="userName" required>
+                                    <input id="userNameInputR" class="form-control" placeholder="Ingresa un nombre de usuario" type="text"  required>
                                  </div>
 								 </div>
 								 
 								 <div class="row">
 								<div class="col-xl-40 col-lg-40 col-md-40 col-sm-10 col-120">
                                     <label >Contraseña</label>
-                                    <input id="passwordInputR"class="form-control" placeholder="Ingresa una contraseña" type="password" name="password" required>
+                                    <input id="passwordInputR"class="form-control" placeholder="Ingresa una contraseña" type="password" required>
                                  </div>
 								 </div>
 								 
 							
 								 
 								 
-							
-								
-								<label>Género</label>
-                                    <select  id="genderListR">
-									  <option value="f"	>f</option>
-									  <option value="m" >m</option>
-									</select>
-                                
+                         <div class="row">
+                           <div class="col-xl-40 col-lg-40 col-md-40 col-sm-10 col-120">
+                                       <label >Género</label>
+                                       <input id="genderInputR"class="form-control" placeholder="Ingresa solamente (f o m)" type="text"  >
+                                    </div>
+                            </div>
 								
 								 
 								 
 								 <div class="row">
 								<div class="col-xl-40 col-lg-40 col-md-40 col-sm-10 col-120">
                                     <label >Fecha de Nacimiento</label>
-                                    <input id="birthInputR"class="form-control" placeholder="" type="date" name="birth" required>
+                                    <input id="birthInputR"class="form-control" placeholder="" type="date"  required>
                                  </div>
 								 </div>
 								 
 								 <div class="row">
 								<div class="col-xl-40 col-lg-40 col-md-40 col-sm-10 col-120">
                                     <label >Teléfono</label>
-                                    <input id="phoneInputR"class="form-control" placeholder="Ingresa tu teléfono" type="text" name="phone" required>
+                                    <input id="phoneInputR"class="form-control" placeholder="Ingresa tu teléfono" type="text"  >
                                  </div>
 								 </div>
 								 
@@ -166,17 +164,20 @@
                            
 						   
                         </div>
-						<div id="btnR" class="col-xl-20 col-lg-20 col-md-20 col-sm-20 col-20">
-							  <button id="register" class="botonResgistrar">Registrarse</button>
-							  
-                           </div>
-						   
-	
+						
+                        
                      </form>
+                     <div id="btnR" class="col-xl-20 col-lg-20 col-md-20 col-sm-20 col-20">
+                        <button  id="register" >Registrarse</button>
+                        
+                            </div>
+                 
                   </div>
                </div>
             </div>
          </div>
+      <br>
+      <br><br><br>
       </section>
 
       
@@ -258,6 +259,7 @@
       </footer>
       <!-- end footer -->
       <!-- Javascript files-->
+      <script src="js/registerModule.js"></script>
       <script src="js/jquery.min.js"></script>
       <script src="js/popper.min.js"></script>
       <script src="js/bootstrap.bundle.min.js"></script>
@@ -268,6 +270,7 @@
       <script src="js/custom.js"></script>
       <!-- javascript --> 
       <script src="js/owl.carousel.js"></script>
+      
       <script>
          $(document).ready(function() {
            var owl = $('.owl-carousel');

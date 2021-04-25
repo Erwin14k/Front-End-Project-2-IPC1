@@ -17,7 +17,7 @@ p {
 }
 
 #VisualizarPacientes,#VisualizarDoctores,#VisualizarEnfermeras,#VisualizarMedicamentos,#ModificarUsuario,#CargaMasiva
-,#logOut,#VisualizarPendientes,#VisualizarAceptadas{
+,#logOut,#VisualizarPendientes,#VisualizarAceptadas,#aceptardenegar,#pendientes,#aceptadas,#rechazadas,#logOutP,#completadas{
  padding-left:30px;
  padding-right:30px;
 }
@@ -97,7 +97,6 @@ p {
   padding: 0px 25px;
   letter-spacing: 0.25px;
   text-decoration: none;
-  transition: all 0.3s;
 }
 
 .white-button a:hover {
@@ -117,7 +116,6 @@ p {
   padding: 0px 25px;
   letter-spacing: 0.25px;
   text-decoration: none;
-  transition: all 0.3s;
 }
 
 .accent-button a:hover {

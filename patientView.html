@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Nurse View</title>
+    <title>Patient View</title>
 
 
     <meta name="description" content="">
@@ -64,7 +64,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="#VisualizarPendientes">
+                    <a href="#pendientes">
                         <span class="rect"></span>
                         <span class="circle"></span>
                         Visualizar Citas Pendientes
@@ -72,17 +72,24 @@
                 </li>
 
                 <li>
-                    <a href="#VisualizarAceptadas">
+                    <a href="#aceptadas">
                         <span class="rect"></span>
                         <span class="circle"></span>
                         Visualizar Citas Aceptadas
                     </a>
                 </li>
                 <li>
-                    <a href="#aceptardenegar">
+                    <a href="#rechazadas">
                         <span class="rect"></span>
                         <span class="circle"></span>
-                        Aeptar/denegar citas
+                        Visualizar Citas Rechazadas
+                    </a>
+                </li>
+                <li>
+                    <a href="#completadas">
+                        <span class="rect"></span>
+                        <span class="circle"></span>
+                        Visualizar Citas Completadas
                     </a>
                 </li>
                 <li>
@@ -95,7 +102,7 @@
 
 
                 <li>
-                    <a href="#logOut">
+                    <a href="#logOutP">
                         <span class="rect"></span>
                         <span class="circle"></span>
                         Cerrar Sesión
@@ -132,13 +139,13 @@
 
 
     <div class="page-content">
-        <section id="VisualizarPendientes" class="content-section">
+        <section id="pendientes" class="content-section">
             <div class="section-heading">
-                <h1>Visualizar Citas<br><em>Pendientes</em></h1>
+                <h1>Historial De Citas<br><em>Pendientes</em></h1>
 
             </div>
             <div class="section-content">
-                <table class="table table-bordered" id="wai" width="100%" cellspacing="0">
+                <table class="table table-bordered" id="waip" width="100%" cellspacing="0">
                     <thead>
                         <tr>
                             <th>Id Cita</th>
@@ -156,13 +163,13 @@
             </div>
         </section>
 
-        <section id="VisualizarAceptadas" class="content-section">
+        <section id="aceptadas" class="content-section">
             <div class="section-heading">
-                <h1>Visualizar Citas<br><em>Aceptadas</em></h1>
+                <h1>Historial De Citas<br><em>Aceptadas</em></h1>
 
             </div>
             <div class="section-content">
-                <table class="table table-bordered" id="acc" width="100%" cellspacing="0">
+                <table class="table table-bordered" id="accp" width="100%" cellspacing="0">
                     <thead>
                         <tr>
                             <th>Id Cita</th>
@@ -181,82 +188,54 @@
             </div>
         </section>
 
-        <section id="aceptardenegar" class="content-section">
-
-            <div class="section-content">
+        <section id="rechazadas" class="content-section">
+            <div class="section-heading">
+                <h1>Historial De Citas<br><em>Rechazadas</em></h1>
 
             </div>
+            <div class="section-content">
+                <table class="table table-bordered" id="decp" width="100%" cellspacing="0">
+                    <thead>
+                        <tr>
+                            <th>Id Cita</th>
+                            <th>Id Paciente</th>
+                            <th>fecha</th>
+                            <th>Hora</th>
+                            <th>Motivo</th>
+                        </tr>
+                    </thead>
+
+                    <tbody id="body_table">
+
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+
+
+        <section id="completadas" class="content-section">
             <div class="section-heading">
-                <h1>Aceptar/Rechazar<br><em>Citas</em></h1>
-                <div id="ContenedorRegistro" class="container">
-                   
+                <h1>Historial De Citas<br><em>Completadas</em></h1>
 
-                        <div class="row">
-                            <div class="col-xl-40 col-lg-40 col-md-40 col-sm-10 col-120">
-                                <label for="gender">Buscar por Id</label>
-                                <select  id="searchById2">
+            </div>
+            <div class="section-content">
+                <table class="table table-bordered" id="comp" width="100%" cellspacing="0">
+                    <thead>
+                        <tr>
+                            <th>Id Cita</th>
+                            <th>Id Paciente</th>
+                            <th>fecha</th>
+                            <th>Hora</th>
+                            <th>Motivo</th>
+                            <th>Doctor Asignado</th>
+                        </tr>
+                    </thead>
 
-                                </select>
-                            </div>
+                    <tbody id="body_table">
 
-                        </div>
-
-                        <div  class="col-xl-20 col-lg-20 col-md-20 col-sm-20 col-20">
-                            <button id="searchida" >Buscar</button>
-
-                        </div>
-                        <br>
-                        <br>
-
-                        <div class="row">
-                            <div class="col-md-9">
-                                <div class="row">
-                                    <div class="col-xl-40 col-lg-40 col-md-40 col-sm-10 col-120">
-                                        <label>Fecha</label>
-                                        <input id="dateI" class="form-control" type="text" 
-                                            disabled="disabled" />
-
-                                    </div>
-                                </div>
-
-
-                                <div class="row">
-                                    <div class="col-xl-40 col-lg-40 col-md-40 col-sm-10 col-120">
-                                        <label>Hora</label>
-                                        <input id="timeI" class="form-control" 
-                                            type="text"  disabled="disabled"/>
-                                    </div>
-                                </div>
-
-                                <div class="row">
-                                <br><br>
-                                    <div class="col-xl-40 col-lg-40 col-md-40 col-sm-10 col-120">
-                                        <label for="doctorList">Buscar Doctor</label>
-                                        <select id="doctorList">
-            
-                                        </select>
-                                    </div>
-            
-                                </div>
-
-
-
-                            </div>
-                        </div>
-                        <br>
-
-                        <div id="btnR" class="col-xl-20 col-lg-20 col-md-20 col-sm-20 col-20">
-                            <button id="acepptBtn" class="botonModificar">aceptar Cita</button>
-                        </div>
-                        <br>
-                        <div id="btnR" class="col-xl-20 col-lg-20 col-md-20 col-sm-20 col-20">
-                            <button id="decilneBtn" class="botonModificar">Rechazar Cita</button>
-                        </div>
-
-
-
-                 
-                </div>
+                    </tbody>
+                </table>
             </div>
         </section>
 
@@ -274,7 +253,7 @@
                         <div class="row">
                             <div class="col-xl-40 col-lg-40 col-md-40 col-sm-10 col-120">
                                 <label for="gender">Buscar por Id</label>
-                                <select name="search by id" id="searchByIdNurse">
+                                <select name="search by id" id="searchByIdPatient">
 
                                 </select>
                             </div>
@@ -282,7 +261,7 @@
                         </div>
 
                         <div id="btnR3" class="col-xl-20 col-lg-20 col-md-20 col-sm-20 col-20">
-                            <button id="searchMyData" class="botonModificar">Buscar</button>
+                            <button id="searchMyDataPatient" class="botonModificar">Buscar</button>
 
                         </div>
                         <br>
@@ -293,7 +272,7 @@
                                 <div class="row">
                                     <div class="col-xl-40 col-lg-40 col-md-40 col-sm-10 col-120">
                                         <label>Nombre</label>
-                                        <input id="nameNurse" class="form-control" placeholder="Ingresa tu nombre"
+                                        <input id="namePatient" class="form-control" placeholder="Ingresa tu nombre"
                                             type="text" />
 
                                     </div>
@@ -303,7 +282,7 @@
                                 <div class="row">
                                     <div class="col-xl-40 col-lg-40 col-md-40 col-sm-10 col-120">
                                         <label>Apellido</label>
-                                        <input id="lastNameNurse" class="form-control" placeholder="Ingresa tu apellido"
+                                        <input id="lastNamePatient" class="form-control" placeholder="Ingresa tu apellido"
                                             type="text"  />
                                     </div>
                                 </div>
@@ -311,7 +290,7 @@
                                 <div class="row">
                                     <div class="col-xl-40 col-lg-40 col-md-40 col-sm-10 col-120">
                                         <label>Nombre de usuario</label>
-                                        <input id="userNameNurse" class="form-control"
+                                        <input id="userNamePatient" class="form-control"
                                             placeholder="Ingresa un nombre de usuario" type="text" 
                                             />
                                     </div>
@@ -320,14 +299,14 @@
                                 <div class="row">
                                     <div class="col-xl-40 col-lg-40 col-md-40 col-sm-10 col-120">
                                         <label>Contraseña</label>
-                                        <input id="passwordNurse" class="form-control" placeholder="Ingresa una contraseña"
+                                        <input id="passwordPatient" class="form-control" placeholder="Ingresa una contraseña"
                                             type="password" />
                                     </div>
                                 </div>
                                 <div class="row">
                                     <div class="col-xl-40 col-lg-40 col-md-40 col-sm-10 col-120">
                                         <label>Fecha de Nacimiento</label>
-                                        <input id="birthNurse" class="form-control" placeholder="" type="date"
+                                        <input id="birthPatient" class="form-control" placeholder="" type="date"
                                             />
                                     </div>
                                 </div>
@@ -336,7 +315,7 @@
                         <br>
 
                         <div id="btnR" class="col-xl-20 col-lg-20 col-md-20 col-sm-20 col-20">
-                            <button id="updateNurseBtn" class="botonModificar">Modificar mis datos</button>
+                            <button id="updatePatientBtn" class="botonModificar">Modificar mis datos</button>
                         </div>
                         <br>
 
@@ -372,13 +351,7 @@
 
     <script src="js/plugins1.js"></script>
     <script src="js/main.js"></script>
-    <script src="js/NurseTables.js"></script>
-    <script src="js/searchAppointments.js"></script>
-    <script src="js/acceptAppointments.js"></script>
-    <script src="js/declineAppointment.js"></script>
-    <script src="js/specificNurseData.js"></script>
-    <script src="js/modifyNurse.js"></script>
-    <script src="js/logOutNurse.js"></script>
+    <script src="js/tablesPatient.js"></script>
     <script>
         // Hide Header on on scroll down
         var didScroll;

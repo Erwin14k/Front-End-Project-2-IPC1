@@ -1,378 +1,384 @@
-
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>Admin View</title>
-        
 
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Admin View</title>
 
-        <link rel="stylesheet" href="css/bootstrap1.min.css">
-        <link rel="stylesheet" href="css/bootstrap-theme1.min.css">
-        <link rel="stylesheet" href="css/fontAwesome1.css">
-        <link rel="stylesheet" href="css/light-box1.css">
-        <link rel="stylesheet" href="css/owl-carousel1.css">
-        <link rel="stylesheet" href="css/templatemo-style1.css">
 
-        
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
 
-        <script src="js/vendor/1modernizr-2.8.3-respond-1.4.2.min.js"></script>
-    </head>
+    <link rel="stylesheet" href="css/bootstrap1.min.css">
+    <link rel="stylesheet" href="css/bootstrap-theme1.min.css">
+    <link rel="stylesheet" href="css/fontAwesome1.css">
+    <link rel="stylesheet" href="css/templatemo-style1.css">
+
+
+
+    <script src="js/vendor/1modernizr-2.8.3-respond-1.4.2.min.js"></script>
+</head>
 
 <body>
 
 
 
-        <header class="nav-down responsive-nav hidden-lg hidden-md">
-            <button type="button" id="nav-toggle" class="navbar-toggle" data-toggle="collapse" data-target="#main-nav">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <!--/.navbar-header-->
-            <div id="main-nav" class="collapse navbar-collapse">
-                <nav>
-                    <ul class="nav navbar-nav">
-                        <li><a href="#Inicio">	Inicio</a></li>
-                        <li><a href="#VisualizarPacientes">Visualizar Pacientes</a></li>
-                        <li><a href="#VisualizarDoctores">Visualizar Doctores</a></li>
-                        <li><a href="#VisualizarEnfermeras">Visualizar Enfermeras</a></li>
-						<li><a href="#VisualizarMedicamentos">Visualizar Medicamentos</a></li>
-                        <li><a href="#ModificarUsuario">Modificar/Eliminar usuario</a></li>
-                        <li><a href="#cerrarSesión">Cerrar Sesión</a></li>
-                    </ul>
-                </nav>
-            </div>
-        </header>
-
-        <div class="sidebar-navigation hidde-sm hidden-xs">
-            <div class="logo">
-                <a href="#">Chas<em>tain</em></a>
-            </div>
+    <header class="nav-down responsive-nav hidden-lg hidden-md">
+        <button type="button" id="nav-toggle" class="navbar-toggle" data-toggle="collapse" data-target="#main-nav">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+        <!--/.navbar-header-->
+        <div id="main-nav" class="collapse navbar-collapse">
             <nav>
-                <ul>
-                    <li>
-                        <a href="#top">
-                            <span class="rect"></span>
-                            <span class="circle"></span>
-                            Inicio
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#VisualizarPacientes">
-                            <span class="rect"></span>
-                            <span class="circle"></span>
-                            Visualizar Pacientes
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#VisualizarDoctores">
-                            <span class="rect"></span>
-                            <span class="circle"></span>
-                            Visualizar Doctores
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#VisualizarEnfermeras">
-                            <span class="rect"></span>
-                            <span class="circle"></span>
-                            Visualizar Enfermeras
-                        </a>
-                    </li>
-					<li>
-                        <a href="#VisualizarMedicamentos">
-                            <span class="rect"></span>
-                            <span class="circle"></span>
-                            Visualizar Medicamentos
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#ModificarUsuario">
-                            <span class="rect"></span>
-                            <span class="circle"></span>
-                            Modificar usuario
-                        </a>
-                    </li>
-					<li>
-                        <a href="#CargaMasiva">
-                            <span class="rect"></span>
-                            <span class="circle"></span>
-                            Carga Masiva
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#logOut">
-                            <span class="rect"></span>
-                            <span class="circle"></span>
-                            Cerrar Sesión
-                        </a>
-                    </li>
+                <ul class="nav navbar-nav">
+                    <li><a href="#Inicio"> Inicio</a></li>
+                    <li><a href="#VisualizarPacientes">Visualizar Pacientes</a></li>
+                    <li><a href="#VisualizarDoctores">Visualizar Doctores</a></li>
+                    <li><a href="#VisualizarEnfermeras">Visualizar Enfermeras</a></li>
+                    <li><a href="#VisualizarMedicamentos">Visualizar Medicamentos</a></li>
+                    <li><a href="#ModificarUsuario">Modificar/Eliminar usuario</a></li>
+                    <li><a href="#cerrarSesión">Cerrar Sesión</a></li>
                 </ul>
             </nav>
-            <ul class="social-icons">
-                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                <li><a href="#"><i class="fa fa-rss"></i></a></li>
-                <li><a href="#"><i class="fa fa-behance"></i></a></li>
-            </ul>
         </div>
+    </header>
 
-        <div class="slider">
-            <div class="Modern-Slider content-section" id="top">
-                <!-- Item -->
-				<img src="images/bannerR.jpg" alt="#"/>
-                <div class="item item-1">
-                    <div class="img-fill">
+    <div class="sidebar-navigation hidde-sm hidden-xs">
+        <div class="logo">
+            <a href="#">Chas<em>tain</em></a>
+        </div>
+        <nav>
+            <ul>
+                <li>
+                    <a href="#top">
+                        <span class="rect"></span>
+                        <span class="circle"></span>
+                        Inicio
+                    </a>
+                </li>
+                <li>
+                    <a href="#VisualizarPacientes">
+                        <span class="rect"></span>
+                        <span class="circle"></span>
+                        Visualizar Pacientes
+                    </a>
+                </li>
+                <li>
+                    <a href="#VisualizarDoctores">
+                        <span class="rect"></span>
+                        <span class="circle"></span>
+                        Visualizar Doctores
+                    </a>
+                </li>
+                <li>
+                    <a href="#VisualizarEnfermeras">
+                        <span class="rect"></span>
+                        <span class="circle"></span>
+                        Visualizar Enfermeras
+                    </a>
+                </li>
+                <li>
+                    <a href="#VisualizarMedicamentos">
+                        <span class="rect"></span>
+                        <span class="circle"></span>
+                        Visualizar Medicamentos
+                    </a>
+                </li>
+                <li>
+                    <a href="#ModificarUsuario">
+                        <span class="rect"></span>
+                        <span class="circle"></span>
+                        Modificar usuario
+                    </a>
+                </li>
+                <li>
+                    <a href="#CargaMasiva">
+                        <span class="rect"></span>
+                        <span class="circle"></span>
+                        Carga Masiva
+                    </a>
+                </li>
+                <li>
+                    <a href="#logOut">
+                        <span class="rect"></span>
+                        <span class="circle"></span>
+                        Cerrar Sesión
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <ul class="social-icons">
+            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+            <li><a href="#"><i class="fa fa-rss"></i></a></li>
+            <li><a href="#"><i class="fa fa-behance"></i></a></li>
+        </ul>
+    </div>
+
+    <div class="slider">
+        <div class="Modern-Slider content-section" id="top">
+            <!-- Item -->
+            <img src="images/bannerR.jpg" alt="#" />
+            <div class="item item-1">
+                <div class="img-fill">
                     <div class="image"></div>
                     <div class="info">
                         <div>
-                          <h1>Chastain Park<br>Memorial</h1>
-                        </div>
+                            <h1>Chastain Park<br>Memorial</h1>
                         </div>
                     </div>
                 </div>
-                <!-- // Item -->
             </div>
+            <!-- // Item -->
         </div>
+    </div>
 
 
-        <div class="page-content">
-            <section id="VisualizarPacientes" class="content-section">
-                <div class="section-heading">
-                    <h1>Visualizar<br><em>Pacientes</em></h1>
-					
-                </div>
-                <div class="section-content">
-                    <table id="tablapacientes"class="table table-bordered"  width="100%" cellspacing="0">
-                                    <thead>
-                                        <tr>
-											<th>Id</th>
-                                            <th>Nombre</th>
-                                            <th>Apellido</th>
-                                            <th>Nombre de Usuario</th>
-                                            <th>Rol</th>
-                                        </tr>
-                                    </thead>
+    <div class="page-content">
+        <section id="VisualizarPacientes" class="content-section">
+            <div class="section-heading">
+                <h1>Visualizar<br><em>Pacientes</em></h1>
 
-                                    <tbody id="body_table">
-                                       
-                                    </tbody>
-                                </table>
-                </div>
-            </section>
-            <section id="VisualizarDoctores" class="content-section">
-                  <div class="section-heading">
-                    <h1>Visualizar<br><em>Doctores</em></h1>
-					
-                </div>
-                <div class="section-content">
-                    <table id="tabladoc"class="table table-bordered"  width="100%" cellspacing="0">
-                                    <thead>
-                                        <tr>
-											<th>Id</th>
-                                            <th>Nombre</th>
-                                            <th>Apellido</th>
-                                            <th>Rol</th>
-                                            <th>Especialidad</th>
-                                        </tr>
-                                    </thead>
+            </div>
+            <div class="section-content">
+                <table id="tablapacientes" class="table table-bordered" width="100%" cellspacing="0">
+                    <thead>
+                        <tr>
+                            <th>Id</th>
+                            <th>Nombre</th>
+                            <th>Apellido</th>
+                            <th>Nombre de Usuario</th>
+                            <th>Rol</th>
+                        </tr>
+                    </thead>
 
-                                    <tbody id="body_table">
-                                       
-                                    </tbody>
-                                </table>
-                </div>            
-            </section>
-            <section id="VisualizarEnfermeras" class="content-section">
-                     <div class="section-heading">
-                    <h1>Visualizar<br><em>Enfermeras</em></h1>
-					
-                </div>
-                <div class="section-content">
-                    <table id="tablanurse"class="table table-bordered"  width="100%" cellspacing="0">
-                                    <thead>
-                                        <tr>
-											<th>Id</th>
-                                            <th>Nombre</th>
-                                            <th>apellido</th>
-                                            <th>Nombre de Usuario</th>
-                                            <th>Rol</th>
-                                        </tr>
-                                    </thead>
+                    <tbody id="body_table">
 
-                                    <tbody id="body_table">
-                                       
-                                    </tbody>
-                                </table>
-                </div>
-            </section>
-			
-			 <section id="VisualizarMedicamentos" class="content-section">
-                     <div class="section-heading">
-                    <h1>Visualizar<br><em>Medicamentos</em></h1>
-					
-                </div>
-                <div class="section-content">
-                    <table id="tablamed"class="table table-bordered"  width="100%" cellspacing="0">
-                                    <thead>
-                                        <tr>
-											<th>Id</th>
-                                            <th>Nombre</th>
-                                            <th>Precio</th>
-                                            <th>Cantidad</th>
-                                         
-                                        </tr>
-                                    </thead>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+        <section id="VisualizarDoctores" class="content-section">
+            <div class="section-heading">
+                <h1>Visualizar<br><em>Doctores</em></h1>
 
-                                    <tbody id="body_table">
-                                       
-                                    </tbody>
-                                </table>
-                </div>
-            </section>
-			
-			
-			 <section id="ModificarUsuario" class="content-section">
-                  
-                <div class="section-content">
-                 
-                </div>    <div class="section-heading">
-                    <h1>Modificar<br><em>Usuarios</em></h1>
-					   <div id="ContenedorRegistro"class="container">
-                     <form class="main-form">
-                        
-						<div class="row">
-								<div class="col-xl-40 col-lg-40 col-md-40 col-sm-10 col-120">
-								<label for="gender">Buscar por Id</label>
-                                    <select id="idList"name="search by id" id="searchById">
-									
-									</select>
-                                 </div>
-								 
-								 </div>
-								 
-							<div id="btnR3" class="col-xl-20 col-lg-20 col-md-20 col-sm-20 col-20">
-							  <button id="search" class="botonModificar">Buscar</button>
-							  
-                           </div>
-						<br>
-                           <br>
-						
-                        <div class="row">
-                           <div class="col-md-9">
-                              <div class="row">
-                                 <div class="col-xl-40 col-lg-40 col-md-40 col-sm-10 col-120">
-                                    <label >Nombre</label>
-                                    <input id="nameR"class="form-control" placeholder="Ingresa tu nombre" type="text" name="nameR" required>
-									
-                                 </div>
-                              </div>
-							  
-							  
-								<div class="row">
-								<div class="col-xl-40 col-lg-40 col-md-40 col-sm-10 col-120">
-                                    <label >Apellido</label>
-                                    <input id="lastNameR"class="form-control" placeholder="Ingresa tu apellido" type="text" name="lastNameR" required>
-                                 </div>
-								 </div>
-								 
-								<div class="row">
-								<div class="col-xl-40 col-lg-40 col-md-40 col-sm-10 col-120">
-                                    <label >Nombre de usuario</label>
-                                    <input id="userName"class="form-control" placeholder="Ingresa un nombre de usuario" type="text" name="userName" required>
-                                 </div>
-								 </div>
-								 
-								 <div class="row">
-								<div class="col-xl-40 col-lg-40 col-md-40 col-sm-10 col-120">
-                                    <label >Contraseña</label>
-                                    <input id="password"class="form-control" placeholder="Ingresa una contraseña" type="password" name="password" required>
-                                 </div>
-								 </div>
-								 <div class="row">
-								<div class="col-xl-40 col-lg-40 col-md-40 col-sm-10 col-120">
-                                    <label >Fecha de Nacimiento</label>
-                                    <input id="birth"class="form-control" placeholder="" type="date" name="birth" required>
-                                 </div>
-								 </div>
-                           </div>
+            </div>
+            <div class="section-content">
+                <table id="tabladoc" class="table table-bordered" width="100%" cellspacing="0">
+                    <thead>
+                        <tr>
+                            <th>Id</th>
+                            <th>Nombre</th>
+                            <th>Apellido</th>
+                            <th>Rol</th>
+                            <th>Especialidad</th>
+                        </tr>
+                    </thead>
+
+                    <tbody id="body_table">
+
+                    </tbody>
+                </table>
+            </div>
+        </section>
+        <section id="VisualizarEnfermeras" class="content-section">
+            <div class="section-heading">
+                <h1>Visualizar<br><em>Enfermeras</em></h1>
+
+            </div>
+            <div class="section-content">
+                <table id="tablanurse" class="table table-bordered" width="100%" cellspacing="0">
+                    <thead>
+                        <tr>
+                            <th>Id</th>
+                            <th>Nombre</th>
+                            <th>apellido</th>
+                            <th>Nombre de Usuario</th>
+                            <th>Rol</th>
+                        </tr>
+                    </thead>
+
+                    <tbody id="body_table">
+
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section id="VisualizarMedicamentos" class="content-section">
+            <div class="section-heading">
+                <h1>Visualizar<br><em>Medicamentos</em></h1>
+
+            </div>
+            <div class="section-content">
+                <table id="tablamed" class="table table-bordered" width="100%" cellspacing="0">
+                    <thead>
+                        <tr>
+                            <th>Id</th>
+                            <th>Nombre</th>
+                            <th>Precio</th>
+                            <th>Cantidad</th>
+
+                        </tr>
+                    </thead>
+
+                    <tbody id="body_table">
+
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+
+        <section id="ModificarUsuario" class="content-section">
+
+            <div class="section-content">
+
+            </div>
+            <div class="section-heading">
+                <h1>Modificar<br><em>Usuarios</em></h1>
+                <div id="ContenedorRegistro" class="container">
+
+
+                    <div class="row">
+                        <div class="col-xl-40 col-lg-40 col-md-40 col-sm-10 col-120">
+                            <label for="gender">Buscar por Id</label>
+                            <select id="idList">
+
+                            </select>
                         </div>
-						<br>
-                           						   
-						<div id="btnR" class="col-xl-20 col-lg-20 col-md-20 col-sm-20 col-20">
-							  <button id="update" class="botonModificar">Modificar</button>							  
-                           </div>
-						<br>                          
-						<div id="btnR2" class="col-xl-200 col-lg-200 col-md-200 col-sm-200 col-200">
-							  <button id="delete" class="botonEliminar">Eliminar</button>
-							  
-                           </div>
-						   
-	
-                     </form>
-                  </div>
-                </div>        
-            </section>
-			
-			
-			<section id="CargaMasiva" class="content-section">
-                <div class="section-heading">
-                    <h1>Carga<br><em>Masiva</em></h1>
-					
-                </div>
-                <div class="section-content">
-                   
-						   <div id="C1" class="col-xl-20 col-lg-20 col-md-20 col-sm-20 col-20">
-							  <button id="BR4" class="botonModificar">Cargar Pacientes</button>
-								
-                           </div>
-						   <br>
-						   <div id="C2" class="col-xl-20 col-lg-20 col-md-20 col-sm-20 col-20">
-							  <button id="BR5" class="botonModificar">Cargar Doctores</button>
-															  
-                           </div>
-						   <br>
-						   <div id="C3" class="col-xl-20 col-lg-20 col-md-20 col-sm-20 col-20">
-							  <button id="BR6" class="botonModificar">Cargar Enfermeras</button>	
-									
-                           </div>
-						   <br>
-						   <div id="C4" class="col-xl-20 col-lg-20 col-md-20 col-sm-20 col-20">
-							  <button id="BR7" class="botonModificar">Cargar Medicamentos</button>
-								
-                           </div>
 
-                                
+                    </div>
+
+                    <div id="div34" class="col-xl-20 col-lg-20 col-md-20 col-sm-20 col-20">
+                        <button id="search">Buscar</button>
+
+                    </div>
+                    <br>
+                    <br>
+
+                    <div class="row">
+                        <div class="col-md-9">
+                            <div class="row">
+                                <div class="col-xl-40 col-lg-40 col-md-40 col-sm-10 col-120">
+                                    <label>Nombre</label>
+                                    <input id="nameM" class="form-control" placeholder="Ingresa tu nombre" type="text">
+
+                                </div>
+                            </div>
+
+
+                            <div class="row">
+                                <div class="col-xl-40 col-lg-40 col-md-40 col-sm-10 col-120">
+                                    <label>Apellido</label>
+                                    <input id="lastNameM" class="form-control" placeholder="Ingresa tu apellido"
+                                        type="text">
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-xl-40 col-lg-40 col-md-40 col-sm-10 col-120">
+                                    <label>Nombre de usuario</label>
+                                    <input id="userNameM" class="form-control"
+                                        placeholder="Ingresa un nombre de usuario" type="text">
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-xl-40 col-lg-40 col-md-40 col-sm-10 col-120">
+                                    <label>Contraseña</label>
+                                    <input id="passwordM" class="form-control" placeholder="Ingresa una contraseña"
+                                        type="password">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xl-40 col-lg-40 col-md-40 col-sm-10 col-120">
+                                    <label>Fecha de Nacimiento</label>
+                                    <input id="birthM" class="form-control" placeholder="" type="date">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+
+                    <div id="btnRrr" class="col-xl-20 col-lg-20 col-md-20 col-sm-20 col-20">
+                        <button id="updateBtn">Modificar</button>
+                    </div>
+                    <br>
+                    <div id="btnR2rrr" class="col-xl-200 col-lg-200 col-md-200 col-sm-200 col-200">
+                        <button id="deleteBtn">Eliminar</button>
+
+                    </div>
                 </div>
-            </section>
-           
-           
-		       <section id="logOut" class="content-section">
-                <div class="section-heading">
-                    <h1>Cerrar<br><em>Sesión</em></h1>
-					 <div id="C5" class="col-xl-20 col-lg-20 col-md-20 col-sm-20 col-20">
-							  <button id="BR8" class="botonModificar">Cerrar Sesión</button>
-								
-                           </div>
+            </div>
+        </section>
+
+
+        <section id="CargaMasiva" class="content-section">
+            <div class="section-heading">
+                <h1>Carga<br><em>Masiva</em></h1>
+
+            </div>
+            <div class="section-content">
+                <div id="C1" class="col-xl-20 col-lg-20 col-md-20 col-sm-20 col-20">
+                    <br>
+                    <br>
+                <input type="file" class="custom-file-input" lang="es" id="ICMP" />
+                <button id="CMP" class="botonModificar">Cargar Pacientes</button>
+                <br>
+                <br>
                 </div>
-                <div class="section-content">
-                   
+
+                <div id="C12" class="col-xl-20 col-lg-20 col-md-20 col-sm-20 col-20">
+                    <br><br><br>
+                <input type="file" class="custom-file-input" lang="es" id="ICMD" />
+                <button id="CMD" class="botonModificar">Cargar Doctores</button>
                 </div>
-            </section>
-        </div>
+
+                <div id="C13" class="col-xl-20 col-lg-20 col-md-20 col-sm-20 col-20">
+                    <br><br><br>
+                <input type="file" class="custom-file-input" lang="es" id="ICME" />
+                <button id="CME" class="botonModificar">Cargar Enfermeras</button>
+                </div>
+
+                <div id="C14" class="col-xl-20 col-lg-20 col-md-20 col-sm-20 col-20">
+                    <br><br><br>
+                <input type="file" class="custom-file-input" lang="es" id="ICMM" />
+                <button id="CMM" class="botonModificar">Cargar Medicamentos</button>
+                </div>
+
+                
+        </section>
+
+
+        <section id="logOut" class="content-section">
+            <div class="section-heading">
+                <h1>Cerrar<br><em>Sesión</em></h1>
+                <div id="C5" class="col-xl-20 col-lg-20 col-md-20 col-sm-20 col-20">
+                    <button id="BR8" class="botonModificar">Cerrar Sesión</button>
+
+                </div>
+            </div>
+            <div class="section-content">
+
+            </div>
+        </section>
+    </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
 
     <script src="js/vendor/bootstrap1.min.js"></script>
     <script src="js/tablesMethods.js"></script>
-    
+    <script src="js/bulkLoadP.js"></script>
+    <script src="js/deleteUser.js"></script>
+    <script src="js/modify-users.js"></script>
     <script src="js/plugins1.js"></script>
     <script src="js/main.js"></script>
 
@@ -383,11 +389,11 @@
         var delta = 5;
         var navbarHeight = $('header').outerHeight();
 
-        $(window).scroll(function(event){
+        $(window).scroll(function (event) {
             didScroll = true;
         });
 
-        setInterval(function() {
+        setInterval(function () {
             if (didScroll) {
                 hasScrolled();
                 didScroll = false;
@@ -396,23 +402,23 @@
 
         function hasScrolled() {
             var st = $(this).scrollTop();
-            
+
             // Make sure they scroll more than delta
-            if(Math.abs(lastScrollTop - st) <= delta)
+            if (Math.abs(lastScrollTop - st) <= delta)
                 return;
-            
+
             // If they scrolled down and are past the navbar, add class .nav-up.
             // This is necessary so you never see what is "behind" the navbar.
-            if (st > lastScrollTop && st > navbarHeight){
+            if (st > lastScrollTop && st > navbarHeight) {
                 // Scroll Down
                 $('header').removeClass('nav-down').addClass('nav-up');
             } else {
                 // Scroll Up
-                if(st + $(window).height() < $(document).height()) {
+                if (st + $(window).height() < $(document).height()) {
                     $('header').removeClass('nav-up').addClass('nav-down');
                 }
             }
-            
+
             lastScrollTop = st;
         }
     </script>
@@ -424,4 +430,5 @@
 
 
 </body>
+
 </html>
