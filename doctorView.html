@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Patient View</title>
+    <title>Doctor View</title>
 
 
     <meta name="description" content="">
@@ -45,7 +45,6 @@
                     <li><a href="#VisualizarMedicamentos">Visualizar Medicamentos</a></li>
                     <li><a href="#ModificarUsuario">Modificar Mi usuario</a></li>
                     <li><a href="#cerrarSesión">Cerrar Sesión</a></li>
-                    
                 </ul>
             </nav>
         </div>
@@ -65,7 +64,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="#pendientes">
+                    <a href="#VisualizarPendientes">
                         <span class="rect"></span>
                         <span class="circle"></span>
                         Visualizar Citas Pendientes
@@ -73,31 +72,31 @@
                 </li>
 
                 <li>
-                    <a href="#aceptadas">
+                    <a href="#acceptadas">
                         <span class="rect"></span>
                         <span class="circle"></span>
                         Visualizar Citas Aceptadas
                     </a>
                 </li>
                 <li>
-                    <a href="#rechazadas">
+                    <a href="#miHistorial">
                         <span class="rect"></span>
                         <span class="circle"></span>
-                        Visualizar Citas Rechazadas
+                        Visualizar Mi Historial De Citas
                     </a>
                 </li>
                 <li>
-                    <a href="#completadas">
+                    <a href="#aceptardenegar">
                         <span class="rect"></span>
                         <span class="circle"></span>
-                        Visualizar Citas Completadas
+                        Aeptar/denegar citas
                     </a>
                 </li>
                 <li>
-                    <a href="#solicitar">
+                    <a href="#finishCitas">
                         <span class="rect"></span>
                         <span class="circle"></span>
-                        Solicitar Citas
+                        Finalizar Citas
                     </a>
                 </li>
                 <li>
@@ -110,7 +109,7 @@
 
 
                 <li>
-                    <a href="#logOutP">
+                    <a href="#logOut">
                         <span class="rect"></span>
                         <span class="circle"></span>
                         Cerrar Sesión
@@ -147,13 +146,13 @@
 
 
     <div class="page-content">
-        <section id="pendientes" class="content-section">
+        <section id="VisualizarPendientes" class="content-section">
             <div class="section-heading">
-                <h1>Historial De Citas<br><em>Pendientes</em></h1>
+                <h1>Visualizar Citas<br><em>Pendientes</em></h1>
 
             </div>
             <div class="section-content">
-                <table class="table table-bordered" id="waitingp" width="100%" cellspacing="0">
+                <table class="table table-bordered" id="waidoctor" width="100%" cellspacing="0">
                     <thead>
                         <tr>
                             <th>Id Cita</th>
@@ -171,64 +170,13 @@
             </div>
         </section>
 
-        <section id="aceptadas" class="content-section">
+        <section id="acceptadas" class="content-section">
             <div class="section-heading">
-                <h1>Historial De Citas<br><em>Aceptadas</em></h1>
+                <h1>Visualizar Citas<br><em> Aceptadas</em></h1>
 
             </div>
             <div class="section-content">
-                <table class="table table-bordered" id="accp" width="100%" cellspacing="0">
-                    <thead>
-                        <tr>
-                            <th>Id Cita</th>
-                            <th>Id Paciente</th>
-                            <th>fecha</th>
-                            <th>Hora</th>
-                            <th>Motivo</th>
-                            <th>Doctor Asignado</th>
-                        </tr>
-                    </thead>
-
-                    <tbody id="body_table">
-
-                    </tbody>
-                </table>
-            </div>
-        </section>
-
-        <section id="rechazadas" class="content-section">
-            <div class="section-heading">
-                <h1>Historial De Citas<br><em>Rechazadas</em></h1>
-
-            </div>
-            <div class="section-content">
-                <table class="table table-bordered" id="decp" width="100%" cellspacing="0">
-                    <thead>
-                        <tr>
-                            <th>Id Cita</th>
-                            <th>Id Paciente</th>
-                            <th>fecha</th>
-                            <th>Hora</th>
-                            <th>Motivo</th>
-                        </tr>
-                    </thead>
-
-                    <tbody id="body_table">
-
-                    </tbody>
-                </table>
-            </div>
-        </section>
-
-
-
-        <section id="completadas" class="content-section">
-            <div class="section-heading">
-                <h1>Historial De Citas<br><em>Completadas</em></h1>
-
-            </div>
-            <div class="section-content">
-                <table class="table table-bordered" id="comp" width="100%" cellspacing="0">
+                <table class="table table-bordered" id="accforme" width="100%" cellspacing="0">
                     <thead>
                         <tr>
                             <th>Id Cita</th>
@@ -247,90 +195,126 @@
             </div>
         </section>
 
+        <section id="miHistorial" class="content-section">
+            <div class="section-heading">
+                <h1>Visualizar Citas<br><em> Finalizadas</em></h1>
 
-        <section id="solicitar" class="content-section">
+            </div>
+            <div class="section-content">
+                <table class="table table-bordered" id="finforme" width="100%" cellspacing="0">
+                    <thead>
+                        <tr>
+                            <th>Id Cita</th>
+                            <th>Id Paciente</th>
+                            <th>fecha</th>
+                            <th>Hora</th>
+                            <th>Motivo</th>
+                            <th>Doctor Asignado</th>
+                        </tr>
+                    </thead>
+
+                    <tbody id="body_table">
+
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section id="aceptardenegar" class="content-section">
 
             <div class="section-content">
 
             </div>
             <div class="section-heading">
-                <h1>Solicitar<br><em>Citas</em></h1>
+                <h1>Aceptar/Rechazar<br><em>Citas</em></h1>
                 <div id="ContenedorRegistro" class="container">
 
-                        <div class="row">
-                            <div class="col-xl-40 col-lg-40 col-md-40 col-sm-10 col-120">
-                                <label for="gender">Mi Id</label>
-                                <select name="search by id" id="idA">
 
-                                </select>
+                    <div class="row">
+                        <div class="col-xl-40 col-lg-40 col-md-40 col-sm-10 col-120">
+                            <label for="gender">Buscar Cita por Id</label>
+                            <select id="searchById3">
+
+                            </select>
+                        </div>
+
+                    </div>
+
+                    <div class="col-xl-20 col-lg-20 col-md-20 col-sm-20 col-20">
+                        <button id="searchida2">Buscar</button>
+
+                    </div>
+                    <br>
+                    <br>
+
+                    <div class="row">
+                        <div class="col-md-9">
+                            <div class="row">
+                                <div class="col-xl-40 col-lg-40 col-md-40 col-sm-10 col-120">
+                                    <label>Fecha</label>
+                                    <input id="dateD" class="form-control" type="text" disabled="disabled" />
+
+                                </div>
                             </div>
 
-                        </div>
 
-                        <br>
-                        <br>
-
-                        <div class="row">
-                            <div class="col-md-9">
-                                <div class="row">
-                                    <div class="col-xl-40 col-lg-40 col-md-40 col-sm-10 col-120">
-                                        <label>Fecha</label>
-                                        <input id="dateA" class="form-control" 
-                                            type="date" />
-
-                                    </div>
+                            <div class="row">
+                                <div class="col-xl-40 col-lg-40 col-md-40 col-sm-10 col-120">
+                                    <label>Hora</label>
+                                    <input id="timeD" class="form-control" type="text" disabled="disabled" />
                                 </div>
-
-
-                                <div class="row">
-                                    <div class="col-xl-40 col-lg-40 col-md-40 col-sm-10 col-120">
-                                        <label>Hora (Horarios de atención de 9:00 am a 7:00 pm)</label>
-                                        <input id="timeA" class="form-control" 
-                                            type="time" min="09:00" max="19:00"  />
-                                    </div>
-                                </div>
-
-                                <div class="row">
-                                    <div class="col-xl-40 col-lg-40 col-md-40 col-sm-10 col-120">
-                                        <label>Motivo De La Cita:</label>
-                                        <input id="reasonA" class="form-control"
-                                            placeholder="Ingresa un motivo de cita "type="text" 
-                                            />
-                                    </div>
-                                </div>
-
                             </div>
                         </div>
-                        <br>
+                    </div>
+                    <br>
 
-                        <div id="btnR" class="col-xl-20 col-lg-20 col-md-20 col-sm-20 col-20">
-                            <button id="solicitarBtn" class="botonModificar">Solicitar La Cita</button>
-                        </div>
-                        <br>
+                    <div id="btnR" class="col-xl-20 col-lg-20 col-md-20 col-sm-20 col-20">
+                        <button id="acepptBtnD" class="botonModificar">aceptar Cita</button>
+                    </div>
+                    <br>
+                    <div id="btnR" class="col-xl-20 col-lg-20 col-md-20 col-sm-20 col-20">
+                        <button id="decilneBtnD" class="botonModificar">Rechazar Cita</button>
+                    </div>
 
 
 
-            
+
                 </div>
             </div>
         </section>
+        <section id="finishCitas" class="content-section">
+
+            <div class="section-content">
+
+            </div>
+            <div class="section-heading">
+                <h1>Finalizar<br><em>Citas</em></h1>
+                <div id="ContenedorRegistro" class="container">
+
+
+                    <div class="row">
+                        <div class="col-xl-40 col-lg-40 col-md-40 col-sm-10 col-120">
+                            <label for="gender">Buscar Cita A mi Cargo por Id</label>
+                            <select id="searchByIdF">
+
+                            </select>
+                        </div>
+
+                    </div>                
+                    <br>
+
+                    <div id="btnR" class="col-xl-20 col-lg-20 col-md-20 col-sm-20 col-20">
+                        <button id="finishBtn2" class="botonModificar">Marcar Como Completada</button>
+                    </div>
+                    <br>
 
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
+                </div>
+            </div>
+        </section>
 
 
 
@@ -343,78 +327,76 @@
                 <h1>Modificar<br><em>Mi Usuario</em></h1>
                 <div id="ContenedorRegistro" class="container">
 
-                        <div class="row">
-                            <div class="col-xl-40 col-lg-40 col-md-40 col-sm-10 col-120">
-                                <label for="gender">Buscar por Id</label>
-                                <select name="search by id" id="searchByIdPatientt">
+                    <div class="row">
+                        <div class="col-xl-40 col-lg-40 col-md-40 col-sm-10 col-120">
+                            <label for="gender">Buscar por Id</label>
+                            <select name="search by id" id="searchByIdNurse">
 
-                                </select>
+                            </select>
+                        </div>
+
+                    </div>
+
+                    <div id="btnR3" class="col-xl-20 col-lg-20 col-md-20 col-sm-20 col-20">
+                        <button id="searchMyData" class="botonModificar">Buscar</button>
+
+                    </div>
+                    <br>
+                    <br>
+
+                    <div class="row">
+                        <div class="col-md-9">
+                            <div class="row">
+                                <div class="col-xl-40 col-lg-40 col-md-40 col-sm-10 col-120">
+                                    <label>Nombre</label>
+                                    <input id="nameNurse" class="form-control" placeholder="Ingresa tu nombre"
+                                        type="text" />
+
+                                </div>
                             </div>
 
-                        </div>
 
-                        <div id="btnR3" class="col-xl-20 col-lg-20 col-md-20 col-sm-20 col-20">
-                            <button id="searchMyDataPatient" class="botonModificar">Buscar</button>
-
-                        </div>
-                        <br>
-                        <br>
-
-                        <div class="row">
-                            <div class="col-md-9">
-                                <div class="row">
-                                    <div class="col-xl-40 col-lg-40 col-md-40 col-sm-10 col-120">
-                                        <label>Nombre</label>
-                                        <input id="namePatient" class="form-control" placeholder="Ingresa tu nombre"
-                                            type="text" />
-
-                                    </div>
+                            <div class="row">
+                                <div class="col-xl-40 col-lg-40 col-md-40 col-sm-10 col-120">
+                                    <label>Apellido</label>
+                                    <input id="lastNameNurse" class="form-control" placeholder="Ingresa tu apellido"
+                                        type="text" />
                                 </div>
+                            </div>
 
-
-                                <div class="row">
-                                    <div class="col-xl-40 col-lg-40 col-md-40 col-sm-10 col-120">
-                                        <label>Apellido</label>
-                                        <input id="lastNamePatient" class="form-control" placeholder="Ingresa tu apellido"
-                                            type="text"  />
-                                    </div>
+                            <div class="row">
+                                <div class="col-xl-40 col-lg-40 col-md-40 col-sm-10 col-120">
+                                    <label>Nombre de usuario</label>
+                                    <input id="userNameNurse" class="form-control"
+                                        placeholder="Ingresa un nombre de usuario" type="text" />
                                 </div>
+                            </div>
 
-                                <div class="row">
-                                    <div class="col-xl-40 col-lg-40 col-md-40 col-sm-10 col-120">
-                                        <label>Nombre de usuario</label>
-                                        <input id="userNamePatient" class="form-control"
-                                            placeholder="Ingresa un nombre de usuario" type="text" 
-                                            />
-                                    </div>
+                            <div class="row">
+                                <div class="col-xl-40 col-lg-40 col-md-40 col-sm-10 col-120">
+                                    <label>Contraseña</label>
+                                    <input id="passwordNurse" class="form-control" placeholder="Ingresa una contraseña"
+                                        type="password" />
                                 </div>
-
-                                <div class="row">
-                                    <div class="col-xl-40 col-lg-40 col-md-40 col-sm-10 col-120">
-                                        <label>Contraseña</label>
-                                        <input id="passwordPatient" class="form-control" placeholder="Ingresa una contraseña"
-                                            type="password" />
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-xl-40 col-lg-40 col-md-40 col-sm-10 col-120">
-                                        <label>Fecha de Nacimiento</label>
-                                        <input id="birthPatient" class="form-control" placeholder="" type="date"
-                                            />
-                                    </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xl-40 col-lg-40 col-md-40 col-sm-10 col-120">
+                                    <label>Fecha de Nacimiento</label>
+                                    <input id="birthNurse" class="form-control" placeholder="" type="date" />
                                 </div>
                             </div>
                         </div>
-                        <br>
+                    </div>
+                    <br>
 
-                        <div id="btnR" class="col-xl-20 col-lg-20 col-md-20 col-sm-20 col-20">
-                            <button id="updatePatientBtn" class="botonModificar">Modificar mis datos</button>
-                        </div>
-                        <br>
+                    <div id="btnR" class="col-xl-20 col-lg-20 col-md-20 col-sm-20 col-20">
+                        <button id="updateNurseBtn" class="botonModificar">Modificar mis datos</button>
+                    </div>
+                    <br>
 
 
 
-            
+
                 </div>
             </div>
         </section>
@@ -427,7 +409,7 @@
             <div class="section-heading">
                 <h1>Cerrar<br><em>Sesión</em></h1>
                 <div id="C5" class="col-xl-20 col-lg-20 col-md-20 col-sm-20 col-20">
-                    <button id="LOP" class="botonModificar">Cerrar Sesión</button>
+                    <button id="LOND" class="botonModificar">Cerrar Sesión</button>
 
                 </div>
             </div>
@@ -444,11 +426,13 @@
 
     <script src="js/plugins1.js"></script>
     <script src="js/main.js"></script>
-    <script src="js/tablesPatient.js"></script>
-    <script src="js/specificPatientData.js"></script>
-    <script src="js/logOutPatient.js"></script>
-    <script src="js/modifyPatients.js"></script>
-    <script src="js/requestAppointment.js"></script>
+    <script src="js/doctorTables.js"></script>
+    <script src="js/acceptDoctor.js"></script>
+    <script src="js/searchAppointmentDoctor.js"></script>
+    <script src="js/declineDoctor.js"></script>
+    <script src="js/finishAppointments.js"></script>
+    <script src="js/logOutDoctor.js"></script>
+
     <script>
         // Hide Header on on scroll down
         var didScroll;

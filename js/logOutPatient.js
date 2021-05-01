@@ -1,5 +1,5 @@
-let logoutBtn = document.getElementById("LON");
-logoutBtn.addEventListener("click",function(){
+let logoutBtnP = document.getElementById("LOP");
+logoutBtnP.addEventListener("click",function(){
     window.location="./index.html";
     localStorage.removeItem("logged");
     localStorage.removeItem("user_name");

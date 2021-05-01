@@ -1,12 +1,13 @@
 
 
-waitin_patientg();
+waiting_patient();
 accepted_patient();
 declined_patient();
-completedPatient();
+//completedPatient();
+
 
 function waiting_patient(){
-    let waitingp = document.getElementById("waip")
+    let waitingp = document.getElementById("waitingp")
     fetch("http://127.0.0.1:5000/waiting-patients",{
         method:"POST",
         headers:{
@@ -34,10 +35,14 @@ function waiting_patient(){
     })        
 }
 
+
+
+
+
 function accepted_patient(){
     let accp = document.getElementById("accp")
     fetch("http://127.0.0.1:5000/accepted-patients",{
-        method:"GET",
+        method:"POST",
         headers:{
             'Content-Type':'application/json'
         },
@@ -69,7 +74,7 @@ function accepted_patient(){
 function declined_patient(){
     let decpp = document.getElementById("decp")
     fetch("http://127.0.0.1:5000/declined-patients",{
-        method:"GET",
+        method:"POST",
         headers:{
             'Content-Type':'application/json'
         },
@@ -100,7 +105,7 @@ function declined_patient(){
 function completed_patient(){
     let compp = document.getElementById("comp")
     fetch("http://127.0.0.1:5000/completed-patients",{
-        method:"GET",
+        method:"POST",
         headers:{
             'Content-Type':'application/json'
         },
@@ -126,3 +131,5 @@ function completed_patient(){
         });
     })        
 }
+
+

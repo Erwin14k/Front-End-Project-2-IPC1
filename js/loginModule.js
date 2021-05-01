@@ -40,6 +40,7 @@ function login(){
                 localStorage.setItem("id",res.id);
                 localStorage.setItem("user_name", userName);
                 localStorage.setItem("role", res.role);
+                localStorage.setItem("name",res.name);
                 window.location = "./adminView.html";
             }
             else if((res.state == "perfect"&& res.role=="nurse")){
@@ -48,6 +49,7 @@ function login(){
                 localStorage.setItem("id",res.id);
                 localStorage.setItem("user_name", userName);
                 localStorage.setItem("role", res.role);
+                localStorage.setItem("name",res.name);
                 window.location = "./nurseView.html";
             }
             else if((res.state == "perfect"&& res.role=="doctor")){
@@ -56,6 +58,7 @@ function login(){
                 localStorage.setItem("id",res.id);
                 localStorage.setItem("user_name", userName);
                 localStorage.setItem("role", res.role);
+                localStorage.setItem("name",res.name);
                 window.location = "./doctorView.html";
             }
             else if((res.state == "perfect"&& res.role=="patient")){
@@ -64,6 +67,7 @@ function login(){
                 localStorage.setItem("id",res.id);
                 localStorage.setItem("user_name", userName);
                 localStorage.setItem("role", res.role);
+                localStorage.setItem("name",res.name);
                 window.location = "./patientView.html";
             }else {
             window.alert("Nombre o usuario Incorrectos, intente de nuevo")

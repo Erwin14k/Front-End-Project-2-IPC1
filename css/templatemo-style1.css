@@ -17,7 +17,8 @@ p {
 }
 
 #VisualizarPacientes,#VisualizarDoctores,#VisualizarEnfermeras,#VisualizarMedicamentos,#ModificarUsuario,#CargaMasiva
-,#logOut,#VisualizarPendientes,#VisualizarAceptadas,#aceptardenegar,#pendientes,#aceptadas,#rechazadas,#logOutP,#completadas{
+,#logOut,#VisualizarPendientes,#VisualizarAceptadas,#aceptardenegar,#pendientes,#aceptadas,#rechazadas,#logOutP,#completadas
+,#solicitar,#miHistorial,#acceptadas,#finishCitas,#modificarMedicina{
  padding-left:30px;
  padding-right:30px;
 }

@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title>Admin View</title>
 
@@ -97,6 +97,13 @@
                     </a>
                 </li>
                 <li>
+                    <a href="#modificarMedicina">
+                        <span class="rect"></span>
+                        <span class="circle"></span>
+                        Modificar Medicamento
+                    </a>
+                </li>
+                <li>
                     <a href="#CargaMasiva">
                         <span class="rect"></span>
                         <span class="circle"></span>
@@ -158,10 +165,13 @@
                         </tr>
                     </thead>
 
-                    <tbody id="body_table">
+                    <tbody id="body_tablepatient">
 
                     </tbody>
                 </table>
+                <div id="btnRrr" class="col-xl-20 col-lg-20 col-md-20 col-sm-20 col-20">
+                    <button id="pdfpacientes">Genenrar Reporte Pdf</button>
+                </div>
             </div>
         </section>
         <section id="VisualizarDoctores" class="content-section">
@@ -181,10 +191,13 @@
                         </tr>
                     </thead>
 
-                    <tbody id="body_table">
+                    <tbody id="body_tabledoctor">
 
                     </tbody>
                 </table>
+                <div id="btnRrr" class="col-xl-20 col-lg-20 col-md-20 col-sm-20 col-20">
+                    <button id="pdfdoctores">Genenrar Reporte Pdf</button>
+                </div>
             </div>
         </section>
         <section id="VisualizarEnfermeras" class="content-section">
@@ -204,10 +217,14 @@
                         </tr>
                     </thead>
 
-                    <tbody id="body_table">
+                    <tbody id="body_tablenurse">
 
                     </tbody>
+                    
                 </table>
+                <div id="btnRrr" class="col-xl-20 col-lg-20 col-md-20 col-sm-20 col-20">
+                    <button id="pdfenfermeras">Genenrar Reporte Pdf</button>
+                </div>
             </div>
         </section>
 
@@ -228,10 +245,13 @@
                         </tr>
                     </thead>
 
-                    <tbody id="body_table">
+                    <tbody id="body_tablemed">
 
                     </tbody>
                 </table>
+                <div id="btnRrr" class="col-xl-20 col-lg-20 col-md-20 col-sm-20 col-20">
+                    <button id="pdfmedicamentos">Genenrar Reporte Pdf</button>
+                </div>
             </div>
         </section>
 
@@ -319,6 +339,82 @@
             </div>
         </section>
 
+        <section id="modificarMedicina" class="content-section">
+
+            <div class="section-content">
+
+            </div>
+            <div class="section-heading">
+                <h1>Modificar<br><em>Medicamentos</em></h1>
+                <div id="ContenedorRegistro" class="container">
+
+
+                    <div class="row">
+                        <div class="col-xl-40 col-lg-40 col-md-40 col-sm-10 col-120">
+                            <label for="gender">Buscar por Id</label>
+                            <select id="idMed">
+
+                            </select>
+                        </div>
+
+                    </div>
+
+                    <div id="div34" class="col-xl-20 col-lg-20 col-md-20 col-sm-20 col-20">
+                        <button id="searchMed">Buscar Medicamento</button>
+
+                    </div>
+                    <br>
+                    <br>
+
+                    <div class="row">
+                        <div class="col-md-9">
+                            <div class="row">
+                                <div class="col-xl-40 col-lg-40 col-md-40 col-sm-10 col-120">
+                                    <label>Nombre</label>
+                                    <input id="nameMed" class="form-control" type="text" disabled>
+
+                                </div>
+                            </div>
+
+
+                            <div class="row">
+                                <div class="col-xl-40 col-lg-40 col-md-40 col-sm-10 col-120">
+                                    <label>Cantidad</label>
+                                    <input id="ammountMed" class="form-control" 
+                                        type="text" disabled>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-xl-40 col-lg-40 col-md-40 col-sm-10 col-120">
+                                    <label>Precio</label>
+                                    <input id="priceMed" class="form-control"
+                                        type="text">
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-xl-40 col-lg-40 col-md-40 col-sm-10 col-120">
+                                    <label>Descripción</label>
+                                    <input id="descriptionMed" class="form-control" 
+                                        type="text">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+
+                    <div id="btnRrr" class="col-xl-20 col-lg-20 col-md-20 col-sm-20 col-20">
+                        <button id="updateMed">Modificar</button>
+                    </div>
+                    <br>
+                    <div id="btnR2rrr" class="col-xl-200 col-lg-200 col-md-200 col-sm-200 col-200">
+                        <button id="deleteMed">Eliminar</button>
+
+                    </div>
+                </div>
+            </div>
+        </section>
 
         <section id="CargaMasiva" class="content-section">
             <div class="section-heading">
@@ -362,26 +458,28 @@
                 <h1>Cerrar<br><em>Sesión</em></h1>
                 <div id="C5" class="col-xl-20 col-lg-20 col-md-20 col-sm-20 col-20">
                     <button id="BR8" class="botonModificar">Cerrar Sesión</button>
-
                 </div>
             </div>
             <div class="section-content">
-
             </div>
         </section>
     </div>
-
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
-
     <script src="js/vendor/bootstrap1.min.js"></script>
     <script src="js/tablesMethods.js"></script>
     <script src="js/bulkLoadP.js"></script>
+    <script src="js/bulkLoadD.js"></script>
+    <script src="js/bulkLoadN.js"></script>
+    <script src="js/bulkLoadM.js"></script>
     <script src="js/deleteUser.js"></script>
     <script src="js/modify-users.js"></script>
+    <script src="js/searchMedicine.js"></script>
+    <script src="js/updateMedicine.js"></script>
+    <script src="js/deleteMedicine.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.js"></script>
     <script src="js/plugins1.js"></script>
     <script src="js/main.js"></script>
-
     <script>
         // Hide Header on on scroll down
         var didScroll;
@@ -392,21 +490,17 @@
         $(window).scroll(function (event) {
             didScroll = true;
         });
-
         setInterval(function () {
             if (didScroll) {
                 hasScrolled();
                 didScroll = false;
             }
         }, 250);
-
         function hasScrolled() {
             var st = $(this).scrollTop();
-
             // Make sure they scroll more than delta
             if (Math.abs(lastScrollTop - st) <= delta)
                 return;
-
             // If they scrolled down and are past the navbar, add class .nav-up.
             // This is necessary so you never see what is "behind" the navbar.
             if (st > lastScrollTop && st > navbarHeight) {
@@ -418,17 +512,9 @@
                     $('header').removeClass('nav-up').addClass('nav-down');
                 }
             }
-
             lastScrollTop = st;
         }
     </script>
-
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" type="text/javascript"></script>
-
-
-
-
-
 </body>
-
 </html>

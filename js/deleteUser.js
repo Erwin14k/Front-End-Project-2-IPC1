@@ -22,6 +22,7 @@ function deleteeUser(){
         console.log("ha ocurrido un error"+err)
     })
     .then(res => { 
+        window.alert("El usuario ha sido eliminado con exito!")
         window.location.reload();
 
     })        

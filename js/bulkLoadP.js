@@ -1,62 +1,68 @@
 
 
-try{
+try {
     let bulkP = document.getElementById("CMP");
-    bulkP.addEventListener("click",bulkLoadPatients);
+    bulkP.addEventListener("click", readerPatients);
 } catch (error) {
-    
+
 }
 
 
-function bulkLoadPatients(){
-    let input_file1 = document.getElementById("ICMP");
-    let file1 = input_file1.files[0];  
-
-    if (!file1) {
-        window.alert("Debes seleccionar un archivo para poder hacer la carga masiva");
-    return;
-}
-    const readerp = new FileReader();
-    readerp.addEventListener("load", (event) => {
-    console.log("el archivos es en T:" +text);
-    text = text.split('\n');
-
-    text.forEach(line => {
-    let user = line.split(',');
-    
-    
-    
-    
-
-    reader.readAsText(file1, "UTF-8");
+function bulkLoadPatients(name, last_name, date, gender, user_name, password, phone) {
 
 
-        // Haciendo una petición al servidor
-        fetch("http://127.0.0.1:5000/bulk-load-patients",{
-            method:"POST",
-            headers:{
-                'Content-Type':'application/json'
-            },
-            body: JSON.stringify({
-                "name": user[0],
-                "last_name": user[1],
-                "date": user[2],
-                "gender": user[3],
-                "user_name":user[4],
-                "password": user[5],
-                "phone": user[6]
-                
-            })
-        }).then(res => res.json())
-        .catch(err  => {
+    // Haciendo una petición al servidor
+    fetch("http://127.0.0.1:5000/bulk-load-patients", {
+        method: "POST",
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({
+            "name": name,
+            "last_name": last_name,
+            "date": date,
+            "gender": gender,
+            "user_name": user_name,
+            "password": password,
+            "phone": phone
+
+        })
+    }).then(res => res.json())
+        .catch(err => {
             window.alert("Ocurrio un error al intentar crear tu usuario")
         })
         .then(res => {
-            // Verificando estado de respuesta 
-            if(res.state == "perfect"){
-            }
+            window.location.reload();
             ;
         });
-        });
-        })
+}
+
+
+
+
+
+
+function readerPatients() {
+    let input_archivo = document.getElementById("ICMP");
+    let archivo = input_archivo.files[0];
+
+    if (!archivo) {
+        window.alert("Sube un archivo primero!")
+        return;
     }
+
+    let reader = new FileReader();
+    reader.addEventListener("load", (event) => {
+        let texto = event.target.result;
+        texto = texto.split('\n');
+
+        texto.forEach(linea => {
+            if (linea != "") {
+                let paciente = linea.split(',');
+                ;
+                bulkLoadPatients(paciente[0], paciente[1], paciente[2], paciente[3], paciente[4], paciente[5], paciente[6]);
+            }
+        });
+    });
+    reader.readAsText(archivo, "UTF-8");
+}
