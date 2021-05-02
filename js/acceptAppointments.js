@@ -7,7 +7,7 @@ try{
 
 
 function acceptAppointment(){
-    let username_doctor = document.getElementById("doctorList").value;
+    let id_doctor = document.getElementById("doctorList").value;
     let id = document.getElementById("searchById2").value;
     if(id!=""){
     fetch("http://127.0.0.1:5000/accept-appointments",{
@@ -17,7 +17,7 @@ function acceptAppointment(){
         },
         body: JSON.stringify({
             "id": id,
-            "doctor": username_doctor
+            "doctor": id_doctor
                         
         })
         

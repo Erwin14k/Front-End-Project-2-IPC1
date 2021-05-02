@@ -58,31 +58,22 @@ function get_patients() {
     <title>Admin View</title>
 
 
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="apple-touch-icon" href="apple-touch-icon.png">
-
-    <link rel="stylesheet" href="css/bootstrap1.min.css">
-    <link rel="stylesheet" href="css/bootstrap-theme1.min.css">
-    <link rel="stylesheet" href="css/fontAwesome1.css">
-    <link rel="stylesheet" href="css/templatemo-style1.css">
 
 
 
-    <script src="js/vendor/1modernizr-2.8.3-respond-1.4.2.min.js"></script>
 </head>
-
+<center>
 <body>
 
 
 <center>
-    <div class="page-content">
-        <section id="VisualizarPacientes" class="content-section">
-            <div class="section-heading">
+    <div class="page-content2">
+        <section id="VisualizarPacientes" class="content-section2">
+            <div class="section-heading2">
                 <h1>Visualizar<br><em>Pacientes</em></h1>
 
             </div>
-            <div class="section-content">
+            <div class="section-content2">
               <table id="tablapacientes" class="table table-bordered" width="100%" cellspacing="0">
                     <thead>
                         <tr>
@@ -109,6 +100,7 @@ function get_patients() {
                           </div>
                         
                         </body>
+                        </center>
                       </html>`;
 
         })
@@ -147,31 +139,19 @@ function get_doctors() {
     <title>Admin View</title>
 
 
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="apple-touch-icon" href="apple-touch-icon.png">
-
-    <link rel="stylesheet" href="css/bootstrap1.min.css">
-    <link rel="stylesheet" href="css/bootstrap-theme1.min.css">
-    <link rel="stylesheet" href="css/fontAwesome1.css">
-    <link rel="stylesheet" href="css/templatemo-style1.css">
-
-
-
-    <script src="js/vendor/1modernizr-2.8.3-respond-1.4.2.min.js"></script>
 </head>
 
 <body>
 
 
 <center>
-    <div class="page-content">
-        <section id="VisualizarDoctores" class="content-section">
-            <div class="section-heading">
+    <div class="page-content2">
+        <section id="VisualizarDoctores" class="content-section2">
+            <div class="section-heading2">
                 <h1>Visualizar<br><em>Doctores</em></h1>
 
             </div>
-            <div class="section-content">
+            <div class="section-content2">
               <table id="tabladoc" class="table table-bordered" width="100%" cellspacing="0">
                     <thead>
                         <tr>
@@ -244,31 +224,20 @@ function get_nurses() {
     <title>Admin View</title>
 
 
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="apple-touch-icon" href="apple-touch-icon.png">
 
-    <link rel="stylesheet" href="css/bootstrap1.min.css">
-    <link rel="stylesheet" href="css/bootstrap-theme1.min.css">
-    <link rel="stylesheet" href="css/fontAwesome1.css">
-    <link rel="stylesheet" href="css/templatemo-style1.css">
-
-
-
-    <script src="js/vendor/1modernizr-2.8.3-respond-1.4.2.min.js"></script>
 </head>
 
 <body>
 
 
 <center>
-    <div class="page-content">
-        <section id="VisualizarPacientes" class="content-section">
-            <div class="section-heading">
+    <div class="page-content2">
+        <section id="VisualizarPacientes" class="content-section2">
+            <div class="section-heading2">
                 <h1>Visualizar<br><em>Enfermeras</em></h1>
 
             </div>
-            <div class="section-content">
+            <div class="section-content2">
               <table id="tablanurse" class="table table-bordered" width="100%" cellspacing="0">
                     <thead>
                         <tr>
@@ -329,32 +298,19 @@ function get_medicines() {
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title>Admin View</title>
 
-
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="apple-touch-icon" href="apple-touch-icon.png">
-
-    <link rel="stylesheet" href="css/bootstrap1.min.css">
-    <link rel="stylesheet" href="css/bootstrap-theme1.min.css">
-    <link rel="stylesheet" href="css/fontAwesome1.css">
-    <link rel="stylesheet" href="css/templatemo-style1.css">
-
-
-
-    <script src="js/vendor/1modernizr-2.8.3-respond-1.4.2.min.js"></script>
 </head>
 
 <body>
 
 
 <center>
-    <div class="page-content">
-        <section id="VisualizarPacientes" class="content-section">
-            <div class="section-heading">
+    <div class="page-content2">
+        <section id="VisualizarPacientes" class="content-section2">
+            <div class="section-heading2">
                 <h1>Visualizar<br><em>Medicamentos</em></h1>
 
             </div>
-            <div class="section-content">
+            <div class="section-content2">
               <table id="tablamed" class="table table-bordered" width="100%" cellspacing="0">
                     <thead>
                         <tr>

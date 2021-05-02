@@ -2,6 +2,7 @@ get_waiting_appointments2();
 get_accepted_appointments_for_me();
 get_finished_appointments_for_me();
 get_accepted_appointments_id_for_me();
+
 function get_waiting_appointments2(){
     let waiting2 = document.getElementById("waidoctor")
     fetch("http://127.0.0.1:5000/get-waiting-appointments",{

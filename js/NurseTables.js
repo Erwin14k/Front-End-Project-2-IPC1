@@ -76,7 +76,7 @@ function get_doctors_list(){
         res.forEach(user => {
             selectionOfDoctor.innerHTML = selectionOfDoctor.innerHTML + `
             
-                <option>${user.user_name} </option>
+                <option>${user.id} </option>
 `        
         });
     })        

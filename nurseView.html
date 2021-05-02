@@ -86,6 +86,13 @@
                     </a>
                 </li>
                 <li>
+                    <a href="#factura">
+                        <span class="rect"></span>
+                        <span class="circle"></span>
+                        Generar Factura
+                    </a>
+                </li>
+                <li>
                     <a href="#ModificarUsuario">
                         <span class="rect"></span>
                         <span class="circle"></span>
@@ -189,180 +196,274 @@
             <div class="section-heading">
                 <h1>Aceptar/Rechazar<br><em>Citas</em></h1>
                 <div id="ContenedorRegistro" class="container">
-                   
 
-                        <div class="row">
-                            <div class="col-xl-40 col-lg-40 col-md-40 col-sm-10 col-120">
-                                <label for="gender">Buscar por Id</label>
-                                <select  id="searchById2">
 
-                                </select>
+                    <div class="row">
+                        <div class="col-xl-40 col-lg-40 col-md-40 col-sm-10 col-120">
+                            <label for="gender">Buscar por Id</label>
+                            <select id="searchById2">
+
+                            </select>
+                        </div>
+
+                    </div>
+
+                    <div class="col-xl-20 col-lg-20 col-md-20 col-sm-20 col-20">
+                        <button id="searchida">Buscar</button>
+
+                    </div>
+                    <br>
+                    <br>
+
+                    <div class="row">
+                        <div class="col-md-9">
+                            <div class="row">
+                                <div class="col-xl-40 col-lg-40 col-md-40 col-sm-10 col-120">
+                                    <label>Fecha</label>
+                                    <input id="dateI" class="form-control" type="text" disabled="disabled" />
+
+                                </div>
                             </div>
 
-                        </div>
 
-                        <div  class="col-xl-20 col-lg-20 col-md-20 col-sm-20 col-20">
-                            <button id="searchida" >Buscar</button>
-
-                        </div>
-                        <br>
-                        <br>
-
-                        <div class="row">
-                            <div class="col-md-9">
-                                <div class="row">
-                                    <div class="col-xl-40 col-lg-40 col-md-40 col-sm-10 col-120">
-                                        <label>Fecha</label>
-                                        <input id="dateI" class="form-control" type="text" 
-                                            disabled="disabled" />
-
-                                    </div>
+                            <div class="row">
+                                <div class="col-xl-40 col-lg-40 col-md-40 col-sm-10 col-120">
+                                    <label>Hora</label>
+                                    <input id="timeI" class="form-control" type="text" disabled="disabled" />
                                 </div>
+                            </div>
 
-
-                                <div class="row">
-                                    <div class="col-xl-40 col-lg-40 col-md-40 col-sm-10 col-120">
-                                        <label>Hora</label>
-                                        <input id="timeI" class="form-control" 
-                                            type="text"  disabled="disabled"/>
-                                    </div>
-                                </div>
-
-                                <div class="row">
+                            <div class="row">
                                 <br><br>
-                                    <div class="col-xl-40 col-lg-40 col-md-40 col-sm-10 col-120">
-                                        <label for="doctorList">Buscar Doctor</label>
-                                        <select id="doctorList">
-            
-                                        </select>
-                                    </div>
-            
+                                <div class="col-xl-40 col-lg-40 col-md-40 col-sm-10 col-120">
+                                    <label for="doctorList">Buscar Doctor</label>
+                                    <select id="doctorList">
+
+                                    </select>
                                 </div>
 
-
-
                             </div>
+
+
+
                         </div>
-                        <br>
+                    </div>
+                    <br>
 
-                        <div id="btnR" class="col-xl-20 col-lg-20 col-md-20 col-sm-20 col-20">
-                            <button id="acepptBtn" class="botonModificar">aceptar Cita</button>
-                        </div>
-                        <br>
-                        <div id="btnR" class="col-xl-20 col-lg-20 col-md-20 col-sm-20 col-20">
-                            <button id="decilneBtn" class="botonModificar">Rechazar Cita</button>
-                        </div>
+                    <div id="btnR" class="col-xl-20 col-lg-20 col-md-20 col-sm-20 col-20">
+                        <button id="acepptBtn" class="botonModificar">aceptar Cita</button>
+                    </div>
+                    <br>
+                    <div id="btnR" class="col-xl-20 col-lg-20 col-md-20 col-sm-20 col-20">
+                        <button id="decilneBtn" class="botonModificar">Rechazar Cita</button>
+                    </div>
 
 
 
-                 
+
                 </div>
             </div>
         </section>
 
 
-
-        <section id="ModificarUsuario" class="content-section">
+        <section id="factura" class="content-section">
 
             <div class="section-content">
 
             </div>
             <div class="section-heading">
-                <h1>Modificar<br><em>Mi Usuario</em></h1>
+                <h1>Generar<br><em>Facutras</em></h1>
                 <div id="ContenedorRegistro" class="container">
+                    <br>
+                    <br>
 
-                        <div class="row">
+                    <div class="row">
+                        <div class="col-md-9">
+                            <div class="row">
+                                <div class="col-xl-40 col-lg-40 col-md-40 col-sm-10 col-120">
+                                    <label>Fecha (Obligatorio)</label>
+                                    <input id="fechafactura" class="form-control" type="date" />
+
+                                </div>
+                            </div>
+
+
+                            <div class="row">
+                                <div class="col-xl-40 col-lg-40 col-md-40 col-sm-10 col-120">
+                                    <label>Nombre del paciente (Obligatorio)</label>
+                                    <input id="nombrefactura" class="form-control" placeholder="Ej: Erwin Vásquez"
+                                        type="text" />
+                                </div>
+                            </div>
+                            <br>
+                            <br>
                             <div class="col-xl-40 col-lg-40 col-md-40 col-sm-10 col-120">
-                                <label for="gender">Buscar por Id</label>
-                                <select name="search by id" id="searchByIdNurse">
+                                <label for="gender">Doctor Asignado: </label>
+                                <select id="doctorprescriptions">
 
                                 </select>
                             </div>
 
                         </div>
-
-                        <div id="btnR3" class="col-xl-20 col-lg-20 col-md-20 col-sm-20 col-20">
-                            <button id="searchMyData" class="botonModificar">Buscar</button>
-
-                        </div>
-                        <br>
-                        <br>
-
-                        <div class="row">
-                            <div class="col-md-9">
-                                <div class="row">
-                                    <div class="col-xl-40 col-lg-40 col-md-40 col-sm-10 col-120">
-                                        <label>Nombre</label>
-                                        <input id="nameNurse" class="form-control" placeholder="Ingresa tu nombre"
-                                            type="text" />
-
-                                    </div>
-                                </div>
+                    </div>
+                </div>
+                <br>
+                <br>
+                <div class="row">
+                    <div class="col-xl-40 col-lg-40 col-md-40 col-sm-10 col-120">
+                        <label>Precio Consulta (Obligatorio)</label>
+                        <input id="precioconsulta" class="form-control" type="text" placeholder="Ej: 250"/>
+                    </div>
+                </div>
 
 
-                                <div class="row">
-                                    <div class="col-xl-40 col-lg-40 col-md-40 col-sm-10 col-120">
-                                        <label>Apellido</label>
-                                        <input id="lastNameNurse" class="form-control" placeholder="Ingresa tu apellido"
-                                            type="text"  />
-                                    </div>
-                                </div>
+                <div class="row">
+                    <div class="col-xl-40 col-lg-40 col-md-40 col-sm-10 col-120">
+                        <label>Costo Operación (Opcional)</label>
+                        <input id="costooperacion" class="form-control" type="text"placeholder="Ej: 250" />
+                    </div>
+                </div>
 
-                                <div class="row">
-                                    <div class="col-xl-40 col-lg-40 col-md-40 col-sm-10 col-120">
-                                        <label>Nombre de usuario</label>
-                                        <input id="userNameNurse" class="form-control"
-                                            placeholder="Ingresa un nombre de usuario" type="text" 
-                                            />
-                                    </div>
-                                </div>
-
-                                <div class="row">
-                                    <div class="col-xl-40 col-lg-40 col-md-40 col-sm-10 col-120">
-                                        <label>Contraseña</label>
-                                        <input id="passwordNurse" class="form-control" placeholder="Ingresa una contraseña"
-                                            type="password" />
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-xl-40 col-lg-40 col-md-40 col-sm-10 col-120">
-                                        <label>Fecha de Nacimiento</label>
-                                        <input id="birthNurse" class="form-control" placeholder="" type="date"
-                                            />
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <br>
-
-                        <div id="btnR" class="col-xl-20 col-lg-20 col-md-20 col-sm-20 col-20">
-                            <button id="updateNurseBtn" class="botonModificar">Modificar mis datos</button>
-                        </div>
-                        <br>
+                <div class="row">
+                    <div class="col-xl-40 col-lg-40 col-md-40 col-sm-10 col-120">
+                        <label>Costo Internado (Opcional)</label>
+                        <input id="costointernado" class="form-control" type="text"placeholder="Ej: 250" />
+                    </div>
+                </div>
+                <br>
+                <br>
+                <div id="btnR" class="col-xl-20 col-lg-20 col-md-20 col-sm-20 col-20">
+                    <button id="calcularTotal" class="botonModificar">Calcular Total</button>
+                </div>
+                <br>
+                <br>
+                <div class="row">
+                    <div class="col-xl-40 col-lg-40 col-md-40 col-sm-10 col-120">
+                        <label>Total Factura</label>
+                        <input id="totalfactura" class="form-control" type="text" disabled/>
+                    </div>
+                </div>
+                <br>
+                <br>
+                <div id="btnR" class="col-xl-20 col-lg-20 col-md-20 col-sm-20 col-20">
+                    <button id="generarFactura" class="botonModificar">Generar Factura</button>
+                </div>
+                <br>
+                <br>
+                <div id="btnR" class="col-xl-20 col-lg-20 col-md-20 col-sm-20 col-20">
+                    <button id="pdfFactura" class="botonModificar">Generar Factura PDF</button>
+                </div>
 
 
 
             
+    </div>
+    </section>
+
+
+
+
+
+
+    <section id="ModificarUsuario" class="content-section">
+
+        <div class="section-content">
+
+        </div>
+        <div class="section-heading">
+            <h1>Modificar<br><em>Mi Usuario</em></h1>
+            <div id="ContenedorRegistro" class="container">
+
+                <div class="row">
+                    <div class="col-xl-40 col-lg-40 col-md-40 col-sm-10 col-120">
+                        <label for="gender">Buscar por Id</label>
+                        <select name="search by id" id="searchByIdNurse">
+
+                        </select>
+                    </div>
+
                 </div>
-            </div>
-        </section>
 
-
-
-
-
-        <section id="logOut" class="content-section">
-            <div class="section-heading">
-                <h1>Cerrar<br><em>Sesión</em></h1>
-                <div id="C5" class="col-xl-20 col-lg-20 col-md-20 col-sm-20 col-20">
-                    <button id="LON" class="botonModificar">Cerrar Sesión</button>
+                <div id="btnR3" class="col-xl-20 col-lg-20 col-md-20 col-sm-20 col-20">
+                    <button id="searchMyData" class="botonModificar">Buscar</button>
 
                 </div>
-            </div>
-            <div class="section-content">
+                <br>
+                <br>
+
+                <div class="row">
+                    <div class="col-md-9">
+                        <div class="row">
+                            <div class="col-xl-40 col-lg-40 col-md-40 col-sm-10 col-120">
+                                <label>Nombre</label>
+                                <input id="nameNurse" class="form-control" placeholder="Ingresa tu nombre"
+                                    type="text" />
+
+                            </div>
+                        </div>
+
+
+                        <div class="row">
+                            <div class="col-xl-40 col-lg-40 col-md-40 col-sm-10 col-120">
+                                <label>Apellido</label>
+                                <input id="lastNameNurse" class="form-control" placeholder="Ingresa tu apellido"
+                                    type="text" />
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-xl-40 col-lg-40 col-md-40 col-sm-10 col-120">
+                                <label>Nombre de usuario</label>
+                                <input id="userNameNurse" class="form-control"
+                                    placeholder="Ingresa un nombre de usuario" type="text" />
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-xl-40 col-lg-40 col-md-40 col-sm-10 col-120">
+                                <label>Contraseña</label>
+                                <input id="passwordNurse" class="form-control" placeholder="Ingresa una contraseña"
+                                    type="password" />
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xl-40 col-lg-40 col-md-40 col-sm-10 col-120">
+                                <label>Fecha de Nacimiento</label>
+                                <input id="birthNurse" class="form-control" placeholder="" type="date" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br>
+
+                <div id="btnR" class="col-xl-20 col-lg-20 col-md-20 col-sm-20 col-20">
+                    <button id="updateNurseBtn" class="botonModificar">Modificar mis datos</button>
+                </div>
+                <br>
+
+
+
 
             </div>
-        </section>
+        </div>
+    </section>
+
+
+
+
+
+    <section id="logOut" class="content-section">
+        <div class="section-heading">
+            <h1>Cerrar<br><em>Sesión</em></h1>
+            <div id="C5" class="col-xl-20 col-lg-20 col-md-20 col-sm-20 col-20">
+                <button id="LON" class="botonModificar">Cerrar Sesión</button>
+
+            </div>
+        </div>
+        <div class="section-content">
+
+        </div>
+    </section>
     </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
@@ -378,6 +479,8 @@
     <script src="js/declineAppointment.js"></script>
     <script src="js/specificNurseData.js"></script>
     <script src="js/modifyNurse.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.js"></script>
+    <script src="js/bill.js"></script>
     <script src="js/logOutNurse.js"></script>
     <script>
         // Hide Header on on scroll down

@@ -28,7 +28,6 @@ function bulkLoadNurses(name,last_name,date,gender,user_name,password,phone) {
             }).then(res => res.json())
                 .catch(err => {
                     
-                    window.alert("Ocurrio un error al intentar crear tu usuario")
                 })
                 .then(res => {
                     window.location.reload();
@@ -60,6 +59,7 @@ function readerNurses() {
             let nurse = linea3.split(',');
 ;
             bulkLoadNurses(nurse[0],nurse[1],nurse[2],nurse[3],nurse[4],nurse[5],nurse[6]);
+        
         }});
     });
     reader3.readAsText(archivo3, "UTF-8");

@@ -24,7 +24,6 @@ function bulkLoadMedicines(name,price,description,ammount) {
                 })
             }).then(res => res.json())
                 .catch(err => {
-                    window.alert("Ocurrio un error al intentar crear la medicina");
                 })
                 .then(res => {
                     window.location.reload();

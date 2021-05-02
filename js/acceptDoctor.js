@@ -41,7 +41,7 @@ function acceptAppointmentSoctor(){
         },
         body: JSON.stringify({
             "id": id,
-            "doctor": localStorage.getItem("user_name")
+            "doctor": localStorage.getItem("id")
                         
         })
         

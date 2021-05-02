@@ -28,7 +28,6 @@ function bulkLoadDoctors(name,last_name,date,gender,user_name,password,specialit
                 })
             }).then(res => res.json())
                 .catch(err => {
-                    window.alert("Ocurrio un error al intentar crear tu usuario")
                 })
                 .then(res => {
                     window.location.reload();

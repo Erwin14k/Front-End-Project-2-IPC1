@@ -3,7 +3,7 @@
 waiting_patient();
 accepted_patient();
 declined_patient();
-//completedPatient();
+completedPatient();
 
 
 function waiting_patient(){
