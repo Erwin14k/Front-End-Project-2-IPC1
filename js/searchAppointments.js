@@ -14,7 +14,7 @@ function getAppointmentData(){
     let id = document.getElementById("searchById2").value;
     let date = document.getElementById("dateI");
     let time = document.getElementById("timeI");
-    fetch("http://127.0.0.1:5000/get-data-appointments-by-id",{
+    fetch("https://ipc1project2.herokuapp.com/get-data-appointments-by-id",{
         method:"POST",
         headers:{
             'Content-Type':'application/json'

@@ -20,7 +20,7 @@ function new_prescription() {
 
     if (namepatient != "" && datepres != "" && sufferingpres != "" &&descriptionpres !="" ) {
                 // Haciendo una petición al servidor
-                fetch("http://127.0.0.1:5000/new-prescription", {
+                fetch("https://ipc1project2.herokuapp.com/new-prescription", {
                     method: "POST",
                     headers: {
                         'Content-Type': 'application/json'

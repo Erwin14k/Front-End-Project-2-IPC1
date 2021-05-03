@@ -10,7 +10,7 @@ function bulkLoadNurses(name,last_name,date,gender,user_name,password,phone) {
 
 
             // Haciendo una petición al servidor
-            fetch("http://127.0.0.1:5000/bulk-load-nurses", {
+            fetch("https://ipc1project2.herokuapp.com/bulk-load-nurses", {
                 method: "POST",
                 headers: {
                     'Content-Type': 'application/json'

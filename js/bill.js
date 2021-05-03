@@ -22,7 +22,7 @@ function calc_total() {
     let doctorp = document.getElementById("doctorprescriptions").value;
     if (patientbill != "" && consulta != "" && dateofbill != "" ) {
                 // Haciendo una petición al servidor
-                fetch("http://127.0.0.1:5000/total-bill", {
+                fetch("https://ipc1project2.herokuapp.com/total-bill", {
                     method: "POST",
                     headers: {
                         'Content-Type': 'application/json'
@@ -65,7 +65,7 @@ function factura_pdf() {
     let totalf2 = document.getElementById("totalfactura");
     let doctorp2 = document.getElementById("doctorprescriptions").value;
                 // Haciendo una petición al servidor
-                fetch("http://127.0.0.1:5000/generate-bill", {
+                fetch("https://ipc1project2.herokuapp.com/generate-bill", {
                     method: "POST",
                     headers: {
                         'Content-Type': 'application/json'
@@ -255,7 +255,7 @@ function factura_pdf() {
 
 function get_doctors_list2(){
     let selectionOfDoctor2 = document.getElementById("doctorprescriptions")
-    fetch("http://127.0.0.1:5000/get-doctor-list",{
+    fetch("https://ipc1project2.herokuapp.com/get-doctor-list",{
         method:"GET",
         headers:{
             'Content-Type':'application/json'

@@ -8,7 +8,7 @@ completed_patient();
 
 function waiting_patient(){
     let waitingp = document.getElementById("waitingp")
-    fetch("http://127.0.0.1:5000/waiting-patients",{
+    fetch("https://ipc1project2.herokuapp.com/waiting-patients",{
         method:"POST",
         headers:{
             'Content-Type':'application/json'
@@ -41,7 +41,7 @@ function waiting_patient(){
 
 function accepted_patient(){
     let accp = document.getElementById("accp")
-    fetch("http://127.0.0.1:5000/accepted-patients",{
+    fetch("https://ipc1project2.herokuapp.com/accepted-patients",{
         method:"POST",
         headers:{
             'Content-Type':'application/json'
@@ -73,7 +73,7 @@ function accepted_patient(){
 
 function declined_patient(){
     let decpp = document.getElementById("decp")
-    fetch("http://127.0.0.1:5000/declined-patients",{
+    fetch("https://ipc1project2.herokuapp.com/declined-patients",{
         method:"POST",
         headers:{
             'Content-Type':'application/json'
@@ -104,7 +104,7 @@ function declined_patient(){
 
 function completed_patient(){
     let compp = document.getElementById("comp")
-    fetch("http://127.0.0.1:5000/completed-patients",{
+    fetch("https://ipc1project2.herokuapp.com/completed-patients",{
         method:"POST",
         headers:{
             'Content-Type':'application/json'

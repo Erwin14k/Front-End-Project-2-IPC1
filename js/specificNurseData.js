@@ -3,7 +3,7 @@
 getNurseId();
 function getNurseId(){
     let selectionOfNurse = document.getElementById("searchByIdNurse");
-    fetch("http://127.0.0.1:5000/get-id-specific-nurse",{
+    fetch("https://ipc1project2.herokuapp.com/get-id-specific-nurse",{
         method:"POST",
         headers:{
             'Content-Type':'application/json'
@@ -39,7 +39,7 @@ function getDataOfNurseById_(){
     let userName4 = document.getElementById("userNameNurse");
     let password4 = document.getElementById("passwordNurse");
     let birth4 = document.getElementById("birthNurse");
-    fetch("http://127.0.0.1:5000/get-data-nurse-by-id",{
+    fetch("https://ipc1project2.herokuapp.com/get-data-nurse-by-id",{
         method:"POST",
         headers:{
             'Content-Type':'application/json'

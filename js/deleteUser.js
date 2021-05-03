@@ -8,7 +8,7 @@ try{
 function deleteeUser(){
     let id = document.getElementById("idList").value;
     
-    fetch("http://127.0.0.1:5000/delete-user",{
+    fetch("https://ipc1project2.herokuapp.com/delete-user",{
         method:"POST",
         headers:{
             'Content-Type':'application/json'

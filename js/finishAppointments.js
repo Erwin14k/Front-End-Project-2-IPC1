@@ -8,7 +8,7 @@ try{
 function finish_appointments(){
     let idf = document.getElementById("searchByIdF").value;
     if(idf!=""){
-    fetch("http://127.0.0.1:5000/finish-appointment",{
+    fetch("https://ipc1project2.herokuapp.com/finish-appointment",{
         method:"POST",
         headers:{
             'Content-Type':'application/json'

@@ -9,7 +9,7 @@ function updateemedicine(){
     let idmed2 = document.getElementById("idMed").value;
     let pricemed2 = document.getElementById("priceMed").value;
     let descriptionmed2 = document.getElementById("descriptionMed").value;
-    fetch("http://127.0.0.1:5000/update-medicine-admin",{
+    fetch("https://ipc1project2.herokuapp.com/update-medicine-admin",{
         method:"POST",
         headers:{
             'Content-Type':'application/json'

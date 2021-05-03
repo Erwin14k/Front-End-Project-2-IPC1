@@ -1,7 +1,7 @@
 getDoctorId();
 function getDoctorId(){
     let selectionOfDoctor = document.getElementById("searchByIdDoctor");
-    fetch("http://127.0.0.1:5000/get-id-specific-doctor",{
+    fetch("https://ipc1project2.herokuapp.com/get-id-specific-doctor",{
         method:"POST",
         headers:{
             'Content-Type':'application/json'
@@ -37,7 +37,7 @@ function getDataOfDoctorById_(){
     let userName7 = document.getElementById("userNamedoctor");
     let password7 = document.getElementById("passworddoctor");
     let birth7 = document.getElementById("birthdoctor");
-    fetch("http://127.0.0.1:5000/get-data-doctor-by-id",{
+    fetch("https://ipc1project2.herokuapp.com/get-data-doctor-by-id",{
         method:"POST",
         headers:{
             'Content-Type':'application/json'

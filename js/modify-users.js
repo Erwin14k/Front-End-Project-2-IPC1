@@ -11,7 +11,7 @@ function getDataOfUsersById(){
     let userName = document.getElementById("userNameM");
     let password = document.getElementById("passwordM");
     let birth = document.getElementById("birthM");
-    fetch("http://127.0.0.1:5000/get-data-patients-by-id",{
+    fetch("https://ipc1project2.herokuapp.com/get-data-patients-by-id",{
         method:"POST",
         headers:{
             'Content-Type':'application/json'
@@ -57,7 +57,7 @@ function updateeUser(){
     let birth2 = document.getElementById("birthM").value;
     let dateArrayU = birth2.split("-").reverse();
     let finalDateU = dateArrayU[0]+"/"+dateArrayU[1]+"/"+dateArrayU[2];
-    fetch("http://127.0.0.1:5000/update-user-admin",{
+    fetch("https://ipc1project2.herokuapp.com/update-user-admin",{
         method:"POST",
         headers:{
             'Content-Type':'application/json'

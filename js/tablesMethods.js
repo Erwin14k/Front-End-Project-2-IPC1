@@ -27,7 +27,7 @@ let medhtml="";
 
 function get_patients() {
     let patientsTable = document.getElementById("tablapacientes")
-    fetch("http://127.0.0.1:5000/get-patients", {
+    fetch("https://ipc1project2.herokuapp.com/get-patients", {
         method: "GET",
         headers: {
             'Content-Type': 'application/json'
@@ -109,7 +109,7 @@ function get_patients() {
 
 function get_doctors() {
     let doctorsTable = document.getElementById("tabladoc")
-    fetch("http://127.0.0.1:5000/get-doctors", {
+    fetch("https://ipc1project2.herokuapp.com/get-doctors", {
         method: "GET",
         headers: {
             'Content-Type': 'application/json'
@@ -194,7 +194,7 @@ function get_doctors() {
 
 function get_nurses() {
     let nursesTable = document.getElementById("tablanurse")
-    fetch("http://127.0.0.1:5000/get-nurses", {
+    fetch("https://ipc1project2.herokuapp.com/get-nurses", {
         method: "GET",
         headers: {
             'Content-Type': 'application/json'
@@ -270,7 +270,7 @@ function get_nurses() {
 
 function get_medicines() {
     let medTable = document.getElementById("tablamed")
-    fetch("http://127.0.0.1:5000/get-medicines", {
+    fetch("https://ipc1project2.herokuapp.com/get-medicines", {
         method: "GET",
         headers: {
             'Content-Type': 'application/json'
@@ -341,7 +341,7 @@ function get_medicines() {
 
 function get_id_of_users() {
     let selectionOfId = document.getElementById("idList")
-    fetch("http://127.0.0.1:5000/get-id_users", {
+    fetch("https://ipc1project2.herokuapp.com/get-id_users", {
         method: "GET",
         headers: {
             'Content-Type': 'application/json'
@@ -362,7 +362,7 @@ function get_id_of_users() {
 
 function get_id_of_medicines() {
     let selectionOfId4 = document.getElementById("idMed")
-    fetch("http://127.0.0.1:5000/get-id_medicines", {
+    fetch("https://ipc1project2.herokuapp.com/get-id_medicines", {
         method: "GET",
         headers: {
             'Content-Type': 'application/json'

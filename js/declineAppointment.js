@@ -10,7 +10,7 @@ try{
 function declineAppointment(){
     let id = document.getElementById("searchById2").value;
     if(id!=""){
-    fetch("http://127.0.0.1:5000/decline-appointment",{
+    fetch("https://ipc1project2.herokuapp.com/decline-appointment",{
         method:"POST",
         headers:{
             'Content-Type':'application/json'

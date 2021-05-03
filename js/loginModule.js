@@ -17,7 +17,7 @@ function login(){
     // Este if verificará que los input de usuario y contraseña no esten vacios
     if(userName != "" && password != ""){
         // Haciendo una petición al servidor de alojamiento
-        fetch("http://127.0.0.1:5000/login",{
+        fetch("https://ipc1project2.herokuapp.com/login",{
             //En este caso se utiliza un método POST
             method:"POST",
             headers:{

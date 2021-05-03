@@ -4,7 +4,7 @@ get_appointments_list_by_id_();
 
 function get_appointments_list_by_id_(){
     let selectionOfapp2 = document.getElementById("searchById3")
-    fetch("http://127.0.0.1:5000/get-id_appointments",{
+    fetch("https://ipc1project2.herokuapp.com/get-id_appointments",{
         method:"GET",
         headers:{
             'Content-Type':'application/json'
@@ -34,7 +34,7 @@ try{
 function acceptAppointmentSoctor(){
     let id = document.getElementById("searchById3").value;
     if(id!=""){
-    fetch("http://127.0.0.1:5000/accept-appointments-doctor",{
+    fetch("https://ipc1project2.herokuapp.com/accept-appointments-doctor",{
         method:"POST",
         headers:{
             'Content-Type':'application/json'

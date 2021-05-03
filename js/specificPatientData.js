@@ -2,7 +2,7 @@ getPatientId();
 
 function getPatientId(){
     let selectionOfPatientt = document.getElementById("searchByIdPatientt");
-    fetch("http://127.0.0.1:5000/get-id-specific-patient",{
+    fetch("https://ipc1project2.herokuapp.com/get-id-specific-patient",{
         method:"POST",
         headers:{
             'Content-Type':'application/json'
@@ -40,7 +40,7 @@ function getDataOfPatientById_(){
     let userName5 = document.getElementById("userNamePatient");
     let password5 = document.getElementById("passwordPatient");
     let birth5 = document.getElementById("birthPatient");
-    fetch("http://127.0.0.1:5000/get-data-patient-by-id",{
+    fetch("https://ipc1project2.herokuapp.com/get-data-patient-by-id",{
         method:"POST",
         headers:{
             'Content-Type':'application/json'

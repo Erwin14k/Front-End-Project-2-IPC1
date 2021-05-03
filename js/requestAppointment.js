@@ -2,7 +2,7 @@ getPatientId();
 
 function getPatientId(){
     let selectionOfPatientt = document.getElementById("idA");
-    fetch("http://127.0.0.1:5000/get-id-specific-patient",{
+    fetch("https://ipc1project2.herokuapp.com/get-id-specific-patient",{
         method:"POST",
         headers:{
             'Content-Type':'application/json'
@@ -46,7 +46,7 @@ function request_(){
     let reason = document.getElementById("reasonA").value;
 
         // Haciendo una petición al servidor
-        fetch("http://127.0.0.1:5000/request-appointment",{
+        fetch("https://ipc1project2.herokuapp.com/request-appointment",{
             method:"POST",
             headers:{
                 'Content-Type':'application/json'

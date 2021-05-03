@@ -15,7 +15,7 @@ function getMedicineData(){
     let pricemed = document.getElementById("priceMed");
     let descriptionmed = document.getElementById("descriptionMed");
     let ammountmed = document.getElementById("ammountMed");
-    fetch("http://127.0.0.1:5000/get-data-medicines-by-id",{
+    fetch("https://ipc1project2.herokuapp.com/get-data-medicines-by-id",{
         method:"POST",
         headers:{
             'Content-Type':'application/json'

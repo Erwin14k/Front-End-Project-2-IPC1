@@ -14,7 +14,7 @@ function updateNurse_(){
     let birthnu = document.getElementById("birthNurse").value;
     let dateArrayNu = birthnu.split("-").reverse();
     let finalDateNu = dateArrayNu[0]+"/"+dateArrayNu[1]+"/"+dateArrayNu[2];
-    fetch("http://127.0.0.1:5000/update-nurse",{
+    fetch("https://ipc1project2.herokuapp.com/update-nurse",{
         method:"POST",
         headers:{
             'Content-Type':'application/json'

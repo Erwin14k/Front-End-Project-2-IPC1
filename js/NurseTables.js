@@ -8,7 +8,7 @@ get_appointments_list_by_id();
 
 function get_waiting_appointments(){
     let waiting = document.getElementById("wai")
-    fetch("http://127.0.0.1:5000/get-waiting-appointments",{
+    fetch("https://ipc1project2.herokuapp.com/get-waiting-appointments",{
         method:"GET",
         headers:{
             'Content-Type':'application/json'
@@ -35,7 +35,7 @@ function get_waiting_appointments(){
 
 function get_accepted_appointments(){
     let accepted = document.getElementById("acc")
-    fetch("http://127.0.0.1:5000/get-accepted-appointments",{
+    fetch("https://ipc1project2.herokuapp.com/get-accepted-appointments",{
         method:"GET",
         headers:{
             'Content-Type':'application/json'
@@ -63,7 +63,7 @@ function get_accepted_appointments(){
 
 function get_doctors_list(){
     let selectionOfDoctor = document.getElementById("doctorList")
-    fetch("http://127.0.0.1:5000/get-doctor-list",{
+    fetch("https://ipc1project2.herokuapp.com/get-doctor-list",{
         method:"GET",
         headers:{
             'Content-Type':'application/json'
@@ -85,7 +85,7 @@ function get_doctors_list(){
 
 function get_appointments_list_by_id(){
     let selectionOfapp = document.getElementById("searchById2")
-    fetch("http://127.0.0.1:5000/get-id_appointments",{
+    fetch("https://ipc1project2.herokuapp.com/get-id_appointments",{
         method:"GET",
         headers:{
             'Content-Type':'application/json'

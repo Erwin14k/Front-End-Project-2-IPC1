@@ -8,7 +8,7 @@ try{
 function deleteeMedicine(){
     let iddelete = document.getElementById("idMed").value;
     
-    fetch("http://127.0.0.1:5000/delete-medicine",{
+    fetch("https://ipc1project2.herokuapp.com/delete-medicine",{
         method:"POST",
         headers:{
             'Content-Type':'application/json'

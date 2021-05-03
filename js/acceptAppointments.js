@@ -10,7 +10,7 @@ function acceptAppointment(){
     let id_doctor = document.getElementById("doctorList").value;
     let id = document.getElementById("searchById2").value;
     if(id!=""){
-    fetch("http://127.0.0.1:5000/accept-appointments",{
+    fetch("https://ipc1project2.herokuapp.com/accept-appointments",{
         method:"POST",
         headers:{
             'Content-Type':'application/json'
