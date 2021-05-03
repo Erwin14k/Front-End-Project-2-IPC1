@@ -44,7 +44,5 @@ function addMedicineToCart(){
         }else{
             window.alert("La cantidad que deseas de este medicamento es superior a la exitente, intenta de nuevo con una menor cantidad de producto")
         }
-       
-
     })        
 }
