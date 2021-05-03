@@ -18,6 +18,8 @@ function create_patient() {
     let birth = document.getElementById("birthInputR").value;
     let gender = document.getElementById("genderInputR").value;
     let phone = document.getElementById("phoneInputR").value;
+    let dateArraypa = birth.split("-").reverse();
+    let finalDatepa = dateArraypa[0]+"/"+dateArraypa[1]+"/"+dateArraypa[2];
     if (name != "" && lastName != "" && userName != "" && gender != "" && birth != "") {
         if (password.length >= 8) {
             if (gender == "m" || gender == "f") {
@@ -33,7 +35,7 @@ function create_patient() {
                         "user_name": userName,
                         "password": password,
                         "gender": gender,
-                        "date_of_birth": birth,
+                        "date_of_birth": finalDatepa,
                         "phone": phone
 
                     })
