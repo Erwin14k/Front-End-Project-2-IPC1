@@ -204,7 +204,7 @@ function pedido_pdf() {
                         </body>
                         
                         </html>`
-                        window.alert("Factura generada con éxito, si deseas generar un pdf con los datos, presiona el botón de abajo!!")
+                        window.alert("Pedido generado con éxito, si deseas generar un pdf con los datos, presiona el botón de abajo!!")
                     })
 }
 
