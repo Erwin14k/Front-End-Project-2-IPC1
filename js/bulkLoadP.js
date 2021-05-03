@@ -31,7 +31,6 @@ function bulkLoadPatients(name, last_name, date, gender, user_name, password, ph
         .catch(err => {
         })
         .then(res => {
-            window.location.reload();
             ;
         });
 }
@@ -62,6 +61,8 @@ function readerPatients() {
                 bulkLoadPatients(paciente[0], paciente[1], paciente[2], paciente[3], paciente[4], paciente[5], paciente[6]);
             }
         });
+        window.alert("Tu carga masiva de pacientes se realizó con éxito!!")
+        window.location.reload();
     });
     reader.readAsText(archivo, "UTF-8");
 }

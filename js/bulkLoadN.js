@@ -30,7 +30,6 @@ function bulkLoadNurses(name,last_name,date,gender,user_name,password,phone) {
                     
                 })
                 .then(res => {
-                    window.location.reload();
                     ;
                 });
 }
@@ -61,6 +60,8 @@ function readerNurses() {
             bulkLoadNurses(nurse[0],nurse[1],nurse[2],nurse[3],nurse[4],nurse[5],nurse[6]);
         
         }});
+        window.alert("Tu carga masiva de enfermeras se realizó con éxito!!")
+        window.location.reload();
     });
     reader3.readAsText(archivo3, "UTF-8");
 }

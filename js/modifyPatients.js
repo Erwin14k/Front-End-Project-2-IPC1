@@ -34,7 +34,7 @@ function updatePatient_(){
         console.log("ha ocurrido un error"+err)
     })
     .then(res => { 
-        if(res.state=="perfect"){
+    if(res.state=="perfect"){
         window.alert("Tu actualización de datos ha sido realizada con éxito!")
         window.location.reload();
     }else{

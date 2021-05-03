@@ -26,7 +26,6 @@ function bulkLoadMedicines(name,price,description,ammount) {
                 .catch(err => {
                 })
                 .then(res => {
-                    window.location.reload();
                     ;
                 });
 }
@@ -56,6 +55,8 @@ function readerMedicines() {
 ;
             bulkLoadMedicines(medicine[0],medicine[1],medicine[2],medicine[3]);
         }});
+        window.alert("Tu carga masiva de medicamentos se realizó con éxito!!")
+        window.location.reload();
     });
     reader4.readAsText(archivo4, "UTF-8");
 }

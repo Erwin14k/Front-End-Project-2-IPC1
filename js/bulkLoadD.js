@@ -30,7 +30,6 @@ function bulkLoadDoctors(name,last_name,date,gender,user_name,password,specialit
                 .catch(err => {
                 })
                 .then(res => {
-                    window.location.reload();
                     ;
                 });
 }
@@ -60,6 +59,8 @@ function readerDoctors() {
 ;
             bulkLoadDoctors(doctor[0],doctor[1],doctor[2],doctor[3],doctor[4],doctor[5],doctor[6],doctor[7]);
         }});
+        window.alert("Tu carga masiva de doctores se realizó con éxito!!")
+        window.location.reload();
     });
     reader2.readAsText(archivo2, "UTF-8");
 }

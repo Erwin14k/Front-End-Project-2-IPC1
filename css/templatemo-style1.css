@@ -18,7 +18,7 @@ p {
 
 #VisualizarPacientes,#VisualizarDoctores,#VisualizarEnfermeras,#VisualizarMedicamentos,#ModificarUsuario,#CargaMasiva
 ,#logOut,#VisualizarPendientes,#VisualizarAceptadas,#aceptardenegar,#pendientes,#aceptadas,#rechazadas,#logOutP,#completadas
-,#solicitar,#miHistorial,#acceptadas,#finishCitas,#modificarMedicina,#factura,#recetas{
+,#solicitar,#miHistorial,#acceptadas,#finishCitas,#modificarMedicina,#factura,#recetas,#logOutPatient{
  padding-left:30px;
  padding-right:30px;
 }

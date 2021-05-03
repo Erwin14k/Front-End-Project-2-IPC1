@@ -34,7 +34,12 @@ function updateNurse_(){
         console.log("ha ocurrido un error"+err)
     })
     .then(res => { 
-        window.location.reload();
+        if(res.state=="perfect"){
+            window.alert("Tu actualización de datos ha sido realizada con éxito!")
+            window.location.reload();
+        }else{
+            window.alert("El nombre de usuario ya está en uso, intenta de nuevo!")
+        }
 
     })        
 }
